@@ -1,43 +1,64 @@
 {%- liquid
   assign show_image = true
+  assign unique = section.id
   assign section_height = section.settings.section_height
+  assign wrapper = section.settings.wrapper
   assign image_background = section.settings.image_background
   assign bg_position = section.settings.bg_position
-  assign section_id = section.id
   assign image = section.settings.image
   assign text_position = section.settings.text_position
+  assign text_alignment = section.settings.text_alignment
   assign subheading = section.settings.subheading
   assign heading = section.settings.heading
+  assign heading_size = section.settings.heading_size | times: 0.01
   assign text = section.settings.text
   assign video_url = section.settings.video_url
   assign button_text = section.settings.button_text
-  assign button_url = section.settings.button_url | default: '#'
+  assign button_link = section.settings.button_link | default: '#'
   assign button_style = section.settings.button_style
   assign bg_color = section.settings.bg_color
+  assign is_link = section.settings.is_link
+  assign link_url = section.settings.link_url
 -%}
 
-{%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
-  {%- style -%}
+{%- style -%}
+  {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
     #ImageWithText--{{ section.id }} {
-      background-color: {{ bg_color }};
+      --bg: {{ bg_color }};
     }
-  {%- endstyle -%}
-{%- endif -%}
+  {%- endif -%}
+  #ImageWithText--{{ section.id }} .rich-text__heading { --adjust-heading: calc(var(--FONT-ADJUST-HEADING) * {{ heading_size }}) }
+{%- endstyle -%}
 
+{%- if is_link -%}<a href="{{ link_url }}">{%- endif -%}
 <section id="ImageWithText--{{ section.id }}"
   class="rich-text{% if image_background %} rich-text--has-background{% endif %} featured-content-section {{ section_height }}"
   data-section-id="{{ section.id }}"
   data-section-type="image-with-text"
+  data-overflow-container
   {% unless image_background %}
     data-prevent-transparent-header
   {% endunless %}>
   <div class="featured-content-section__wrapper">
     {%- render 'rich-text',
-      show_image: show_image, image_background: image_background, bg_position: bg_position, section_id: section_id, image: image,
-      text_position: text_position, subheading: subheading, heading: heading, text: text, video_url: video_url,
-      button_text: button_text, button_url: button_url, button_style: button_style -%}
+      show_image: show_image,
+      image_background: image_background,
+      bg_position: bg_position,
+      unique: unique,
+      wrapper: wrapper,
+      image: image,
+      text_position: text_position,
+      text_alignment: text_alignment,
+      subheading: subheading,
+      heading: heading,
+      text: text,
+      video_url: video_url,
+      button_text: button_text,
+      button_link: button_link,
+      button_style: button_style -%}
   </div>
 </section>
+{%- if is_link -%}</a>{%- endif -%}
 
 {% schema %}
 {
@@ -52,28 +73,13 @@
         "type": "select",
         "id": "section_height",
         "label": "Height",
-        "default": "sixty-fifty-height-hero",
+        "default": "six-fifty-height",
         "options": [
-          {
-            "value": "one-hundred-height-hero",
-            "label": "Full screen"
-          },
-          {
-            "value": "seven-fifty-height-hero",
-            "label": "750px"
-          },
-          {
-            "value": "sixty-fifty-height-hero",
-            "label": "650px"
-          },
-          {
-            "value": "five-fifty-height-hero ",
-            "label": "550px"
-          },
-          {
-            "value": "four-fifty-height-hero",
-            "label": "450px"
-          }
+          { "value": "full-height", "label": "Full screen" },
+          { "value": "seven-fifty-height", "label": "750px" },
+          { "value": "six-fifty-height", "label": "650px" },
+          { "value": "five-fifty-height ", "label": "550px" },
+          { "value": "four-fifty-height", "label": "450px" }
         ]
       },
       {
@@ -90,6 +96,16 @@
             "value": "right",
             "label": "Right"
           }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "wrapper",
+        "label": "Width",
+        "default": "normal",
+        "options": [
+          { "value": "normal", "label": "Normal" },
+          { "value": "full", "label": "Wide" }
         ]
       },
       {
@@ -125,6 +141,16 @@
         "content": "Text"
       },
       {
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Alignment",
+        "default": "left",
+        "options": [
+          { "label": "Left", "value": "left" },
+          { "label": "Center", "value": "center" }
+        ]
+      },
+      {
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
@@ -135,6 +161,16 @@
         "id": "heading",
         "label": "Heading",
         "default": "Our Story"
+      },
+      {
+        "type": "range",
+        "id": "heading_size",
+        "label": "Heading size",
+        "default": 100,
+        "min": 100,
+        "max": 200,
+        "step": 10,
+        "unit": "%"
       },
       {
         "type": "richtext",
@@ -154,7 +190,7 @@
       },
       {
         "type": "url",
-        "id": "button_url",
+        "id": "button_link",
         "label": "Link"
       },
       {
@@ -163,8 +199,11 @@
         "label": "Style",
         "default": "primary",
         "options": [
-          { "label": "Primary", "value": "primary" },
-          { "label": "Secondary", "value": "secondary" }
+          { "label": "Text", "value": "text" },
+          { "label": "Small button", "value": "primary btn--small" },
+          { "label": "Large button", "value": "primary" },
+          { "label": "Small outline button", "value": "secondary btn--small" },
+          { "label": "Large outline button", "value": "secondary" }
         ]
       },
       {
@@ -185,6 +224,21 @@
         "type": "color",
         "id": "bg_color",
         "label": "Background"
+      },
+      {
+        "type": "header",
+        "content": "Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_link",
+        "label": "Make image clickable as link",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "Link"
       }
     ],
     "presets": [
