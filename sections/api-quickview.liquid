@@ -4,4 +4,4 @@
 {% endcomment %}
 
 {%- assign unique = 'quickview-' | append: section.id -%}
-{%- render 'product', product: product, section: nil, section_type: 'quickview', unique: unique -%}
+{%- render 'product', product: product, unique: unique, section: nil, section_type: 'quickview' -%}
