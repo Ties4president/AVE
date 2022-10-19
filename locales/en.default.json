@@ -4,6 +4,9 @@
     "swatches": {
       "color": "Color, Colour"
     },
+    "size_chart": {
+      "size": "Size"
+    },
     "accessibility": {
       "skip_to_content": "Skip to content",
       "select_variant": "Select variant dropdown",
@@ -11,27 +14,25 @@
       "show_products": "Show products",
       "hide_products": "Hide products",
       "dismiss": "Dismiss",
+      "close": "Close",
       "close_drawer": "Close",
+      "close_search_bar": "Close search bar",
       "open_search_bar": "Open search bar",
       "submit_search_request": "Submit your search request",
       "search-field": "Search text field",
-      "close_search_bar": "Close search bar",
       "mobile_menu_toggle": "Open navigation menu",
       "open_cart": "Open cart",
-      "arrow_previous": "Previous slide",
-      "arrow_next": "Next slide",
-      "increase": "Increase quantity",
-      "decrease": "Decrease quantity",
+      "increase": "Increase Quantity",
+      "decrease": "Decrease Quantity",
       "submit_email": "Submit",
-      "subscribe_to_newsletter": "Subscribe to our newsletter",
-      "facebook_share": "Share on Facebook",
-      "twitter_share": "Share on Twitter",
-      "pinterest_share": "Share on Pinterest",
+      "subscribe_to_newsletter": "Subscribe to Our Newsletter",
+      "link_copied": "Link copied",
       "logo_image": "Logo image",
       "unit_price_separator": "per",
       "my_account": "My Account",
       "total_reviews": "total reviews",
       "view": "View",
+      "product_image_lightbox": "Open image lightbox",
       "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars"
     },
     "meta": {
@@ -41,13 +42,24 @@
     "404": {
       "title": "404",
       "subtext_html": "This page does not exist.",
-      "button_text": "Return to home"
+      "button_text": "Return to Home"
     },
     "newsletter_form": {
       "heading": "Newsletter",
-      "email": "email@example.com",
+      "name": "Your name",
+      "first_name": "First name",
+      "last_name": "Last name",
+      "email": "Your email",
+      "sign_up": "Sign up",
       "newsletter_success": "Thank you for signing up!",
-      "newsletter_error": "An error occured while sending this form."
+      "newsletter_error": "Email is invalid or already taken."
+    },
+    "cookies": {
+      "title": "Can we store cookies?",
+      "cookies_link": "cookies",
+      "text_html": "Palo Alto uses {{ cookies }} to improve your browsing experience.",
+      "accept": "Ok",
+      "decline": "No Thanks"
     },
     "search": {
       "no_results_html": "Your search for \"{{ terms }}\" did not yield any results.",
@@ -55,7 +67,7 @@
       "title": "Search for products on our site",
       "placeholder": "Search our store",
       "submit": "Search",
-      "view_all": "View all",
+      "view_all": "View All",
       "popular": "Popular searches",
       "has_results": "Showing results for \"{{search}}\"",
       "no_results": "Your search for \"{{ search }}\" did not yield any results",
@@ -66,6 +78,7 @@
       },
       "browse_categories": "Browse categories",
       "badge": {
+        "blog": "Blog",
         "page": "Page"
       }
     },
@@ -77,19 +90,25 @@
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Posted by {{ author }} on {{ date }}",
+      "by_author": "By {{ author }}",
       "older_post": "Older Post",
       "newer_post": "Newer Post",
       "tags": "Tags",
       "comment_meta_html": "{{ author }} on {{ date }}",
-      "read_more": "Read more"
+      "read_more": "Read more",
+      "onboarding": {
+        "title": "Blog post title",
+        "excerpt": "Once you create a blog post, the content will appear here.",
+        "tag": "tag",
+        "author": "Author Name"
+      }
     },
     "comments": {
       "title": "Leave a comment",
       "name": "Name",
       "email": "Email",
       "message": "Message",
-      "post_comment": "Post comment",
+      "post_comment": "Post Comment",
       "moderated": "Please note, comments must be approved before they are published",
       "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
       "success": "Your comment was posted successfully! Thank you!",
@@ -104,25 +123,34 @@
     "general": {
       "title": "Cart",
       "remove": "Remove",
-      "note": "Special instructions for seller",
-      "discount": "Discount",
+      "note": "Add a note for recipient",
+      "discount_label": "You're saving {{ amount }} with {{ title }}",
       "subtotal": "Subtotal",
+      "subtotal_items": "Items",
       "shipping_at_checkout": "Shipping & taxes calculated at checkout",
+      "customer_note": "Special instructions for seller",
+      "cart_notes_label": "Add order notes",
+      "gift_notes_label": "Is this a gift?",
+      "gift_note_attribute": "Gift note",
       "update": "Update Cart",
-      "checkout": "Check Out",
+      "checkout": "Checkout",
       "empty": "Your cart is currently empty.",
       "accept_terms": "You must accept our terms and conditions.",
       "zero_qty_error": "Quantity must be greater than 0.",
       "limit_error": "Sorry, looks like we don't have enough of this product.",
       "continue_shopping": "Continue Shopping",
       "close_cart": "Close Cart",
-      "free_shipping_message_html": "Spend <span data-free-shipping-amount>{{ amount }}<\/span> to qualify for free shipping",
+      "free_shipping_message_html": "Spend <span data-free-shipping-amount=\"\">{{ amount }}<\/span> to qualify for free shipping",
       "qualified_shipping_message": "Congratulations! Your order qualifies for free shipping"
     },
     "label": {
       "product": "Product",
       "price": "Price",
       "quantity": "Quantity",
+      "items_with_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} items"
+      },
       "total": "Total"
     }
   },
@@ -130,7 +158,6 @@
     "filters": {
       "apply": "Apply",
       "clear": "Clear",
-      "clear_all": "Clear all",
       "empty": "No products found",
       "from": "From",
       "filter_and_sort": "Filter and sort",
@@ -147,7 +174,6 @@
       },
       "reset": "Reset",
       "sort_button": "Sort",
-      "sort_by_label": "Sort by",
       "title": "Collection",
       "to": "To",
       "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>"
@@ -157,18 +183,11 @@
     "general": {
       "list_collections": "Collections",
       "all_of_collection": "All {{ collection }}",
-      "view_collection": "View collection",
-      "no_matches": "Sorry, there are no products in this collection",
+      "view_collection": "View Collection",
+      "view_product": "View Product",
+      "no_matches": "Sorry, there are no products in this collection.",
       "no_matches_by_filter": "{{ products_count }} products found with these options.",
-      "shop": "Shop",
-      "items_with_count": {
-        "one": "{{ count }} item",
-        "other": "{{ count }} items"
-      },
-      "products_with_count": {
-        "one": "{{ count }} product shown",
-        "other": "{{ count }} products shown"
-      }
+      "shop": "Shop"
     },
     "sorting": {
       "title": "Sort by",
@@ -183,10 +202,6 @@
       "date_descending": "Date, new to old",
       "date_ascending": "Date, old to new"
     },
-    "pagination": {
-      "load_more": "Load more",
-      "loading": "Loading more"
-    },
     "breadcrumbs": {
       "home": "Home",
       "back_to_home": "Go back to Home page",
@@ -197,8 +212,7 @@
     "onboarding": {
       "popup_title": "This page will show all of your store's products",
       "no_products_html": "There are no products yet, but once you begin adding them they will show up here regardless if they are in a collection.",
-      "add_product": "Add Product",
-      "view_product": "View product"
+      "add_product": "Add Product"
     }
   },
   "contact": {
@@ -246,7 +260,8 @@
       "update": "Update Address",
       "cancel": "Cancel",
       "edit": "Edit",
-      "delete": "Delete"
+      "delete": "Delete",
+      "delete_confirm": "Are you sure you wish to delete this address?"
     },
     "login": {
       "title": "Login",
@@ -323,7 +338,7 @@
       "login": "Password"
     },
     "buttons": {
-      "sign_up": "Sign Up",
+      "sign_up": "Sign up",
       "store_login": "Store Login",
       "newsletter_signup": "Newsletter Signup",
       "login": "Login"
@@ -343,15 +358,13 @@
       "collection_title": "Collection Title",
       "single_product_title": "Showcase a single product",
       "single_product_description": "Once you choose a product, its description will populate here automatically.",
-      "single_product__text_html": "Add a product to feature it front and center on your home page. To change which product to feature, to reorganize or remove this section, click Customize Theme",
-      "single_product_cta": "Add a Product",
-      "single_product_cta_secondary": "Customize Theme",
+      "single_collection_description": "Once you choose a collection, its description will populate here automatically.",
+      "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar.",
       "slideshow": {
-        "scroll_down": "Scroll down",
         "heading": "Welcome to Palo Alto",
         "subheading": "This subheading helps you provide some more detail to the title above.",
         "button_text": "Welcome",
-        "video_button_text": "Watch this video"
+        "video_button_text": "Watch This Video"
       },
       "faq": {
         "question": "Question",
@@ -369,7 +382,7 @@
       },
       "icons_row": {
         "title": "Feature",
-        "content": "Palo Alto is a powerful Shopify theme that will set you apart from the rest with a variety of sections and features."
+        "text": "Palo Alto is a powerful Shopify theme that will set you apart from the rest with a variety of sections and features."
       },
       "testimonials": {
         "testimonial": "Use this testimonial as an opportunity for your customers to discuss your brand and what sets you apart from the competition.",
@@ -377,10 +390,10 @@
         "customer_name_2": "John Watson",
         "customer_name_3": "Mycroft Holmes"
       },
-      "image_columns": {
+      "shop_the_look": {
         "heading": "Our Story",
         "text": "Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.",
-        "button_text": "Shop now"
+        "button_text": "Shop Now"
       },
       "press": {
         "text": "Provide some information about what the company below thinks about your brand.",
@@ -423,33 +436,48 @@
       "sale_price": "Sale price",
       "regular_price": "Regular price",
       "description": "description",
-      "quick_view": "Quick view",
       "view_all_details": "View all details",
-      "add_to_cart": "Add to cart",
       "reviews": "Reviews",
       "filters": "Filters",
       "filter_by": "Filter by",
-      "filters_empty": "No filters available",
-      "reset": "Clear filters",
-      "close": "Close filters"
+      "reset": "Clear Filters",
+      "close": "Close Filters",
+      "products_with_count": {
+        "one": "{{ count }} product",
+        "other": "{{ count }} products"
+      },
+      "see_all": "See All",
+      "upsell_out_of_stock": "Out of stock",
+      "upsell_error_info": "Select one in Upsell block setting",
+      "upsell_error_no_product": "No upsell product selected",
+      "pair_products": "Buy It With"
     },
     "product": {
-      "sold_out_html": "Sold Out",
-      "on_sale_html": "Sale",
-      "on_sale_from_html": "On Sale from {{ price }}",
-      "preorder": "Pre-order",
+      "sold_out": "Sold Out",
+      "sale": "Sale",
+      "preorder": "Pre-Order",
+      "one_time_purchase": "One-time purchase",
+      "free": "Free",
       "unavailable": "Unavailable",
       "compare_at": "Compare at",
       "quantity": "Quantity",
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "Add to Cart",
       "buy_it_now": "Buy it now",
-      "sold_out": "Sold Out",
+      "in_stock": "Item is in stock",
+      "out_of_stock": "Item is out of stock",
+      "item_unavailable": "Item is unavailable",
+      "remaining_html": "Only {{ inventory }} left in stock",
       "on_sale": "Sale",
-      "view_item": "View Item",
-      "view_product": "View product",
+      "save_badge_html": "Save {{ discount }}",
+      "save_badge_up_to_html": "Save up to {{ discount }}",
+      "view_product": "View Product",
       "checkout": "Checkout",
-      "view_in_space": "View in your space",
-      "view_in_space_label": "View in your space, loads item in augmented reality window"
+      "view_in_space": "View in Your Space",
+      "view_in_space_label": "View in your space, loads item in augmented reality window",
+      "subscription": "Subscription",
+      "save": "Save",
+      "unit_price_label": "Unit price",
+      "popup_missing": "No page added from the block options"
     }
   },
   "gift_cards": {
@@ -460,7 +488,7 @@
       "expired": "Expired on {{ expiry }}",
       "active": "Expires on {{ expiry }}",
       "redeem": "Use this code at checkout to redeem your gift card",
-      "shop_link": "Start shopping",
+      "shop_link": "Start Shopping",
       "print": "Print",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "gift_card": "Gift Card"
@@ -488,6 +516,16 @@
       "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
       "kilometers": "km",
       "miles": "mi"
+    }
+  },
+  "slideshow": {
+    "previous": "Previous",
+    "next": "Next",
+    "scroll_down": "Scroll down"
+  },
+  "shopify": {
+    "links": {
+      "powered_by_shopify": " "
     }
   }
 }
