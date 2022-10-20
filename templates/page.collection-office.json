@@ -1,0 +1,408 @@
+{
+  "sections": {
+    "16572785390d760d1b": {
+      "type": "section-split-images",
+      "blocks": {
+        "1657278539e26c0580-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/024.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        },
+        "1657278539e26c0580-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/030.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "1657278539e26c0580-0",
+        "1657278539e26c0580-1"
+      ],
+      "settings": {
+        "image_height": "full-height",
+        "mobile_layout": "stacked",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "text": {
+      "type": "section-text",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p><strong>ELEVATING OFFICES<\/strong><\/p>",
+            "size": 190
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As the desire to dress, stand out and be listened to grows we have rethought our approach to traditionally tailored statements, to create easy-wearing two-pieces that can be as readily worn for multiple occasions, resulting into unique products to treasure for seasons to come.<br\/><br\/><\/p>",
+            "size": 140
+          }
+        },
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover uplifting hues, modern tailoring and second-skin silhouettes – this is fall 2022<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "text",
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true
+      }
+    },
+    "165892538227116636": {
+      "type": "section-look",
+      "blocks": {
+        "1658925381e090bb29-0": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/027.png",
+            "product": "emy-leather-jacket",
+            "position_x": 68,
+            "position_y": 50
+          }
+        }
+      },
+      "block_order": [
+        "1658925381e090bb29-0"
+      ],
+      "settings": {
+        "section_height": "six-fifty-height",
+        "title": "THE 25th FLOOR",
+        "text": "",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all-women",
+        "button_style": "primary",
+        "text_color": "",
+        "bg_color": ""
+      }
+    },
+    "16589257115bc75de7": {
+      "type": "section-custom-content",
+      "blocks": {
+        "16589257105027e26b-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/015.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "fd27c67b-140c-4063-84f3-0fd7e31b0038": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/001_dd81dd4c-3202-4568-8859-9e5ff5221e0b.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "16589257105027e26b-0",
+        "fd27c67b-140c-4063-84f3-0fd7e31b0038"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "165892495741a91672": {
+      "type": "section-custom-content",
+      "blocks": {
+        "165892495742bf4580-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/018.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "0a537747-bdda-4f2c-a07c-a40c10174cd0": {
+          "type": "product",
+          "settings": {
+            "title": "Shop the look",
+            "product": "khaite-straight-leg-leather-trousers",
+            "text_color": "text-dark",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "165892495742bf4580-0",
+        "0a537747-bdda-4f2c-a07c-a40c10174cd0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "165892539244459e90": {
+      "type": "section-custom-content",
+      "blocks": {
+        "510aae22-dbf2-4437-8feb-c9a265957d90": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/023.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "1658925392f0563dfc-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/006.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "510aae22-dbf2-4437-8feb-c9a265957d90",
+        "1658925392f0563dfc-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "16589262384d762f34": {
+      "type": "section-split-images",
+      "blocks": {
+        "16589262380db90da5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/016.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        },
+        "16589262380db90da5-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/005.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "16589262380db90da5-0",
+        "16589262380db90da5-1"
+      ],
+      "settings": {
+        "image_height": "full-height",
+        "mobile_layout": "stacked",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "165892509785d16382": {
+      "type": "section-custom-content",
+      "blocks": {
+        "bc9b7fee-dd60-4b5c-86d3-21c53e191de5": {
+          "type": "product",
+          "settings": {
+            "title": "Shop the look",
+            "product": "santiago-wool-jacket",
+            "text_color": "text-dark",
+            "bg_color": ""
+          }
+        },
+        "1658925097049a27d2-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/020.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "bc9b7fee-dd60-4b5c-86d3-21c53e191de5",
+        "1658925097049a27d2-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1658926392fc648322": {
+      "type": "section-look",
+      "blocks": {
+        "16589263928b877b1f-0": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/009.png",
+            "product": "",
+            "position_x": 50,
+            "position_y": 50
+          }
+        }
+      },
+      "block_order": [
+        "16589263928b877b1f-0"
+      ],
+      "settings": {
+        "section_height": "six-fifty-height",
+        "title": "OUT OF OFFICE",
+        "text": "",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all-men",
+        "button_style": "primary",
+        "text_color": "",
+        "bg_color": ""
+      }
+    },
+    "1658926750a66a5504": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "1658926750c5c8cc30-0": {
+          "type": "collection",
+          "settings": {
+            "title": "Men",
+            "tab_collection": "all-men",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        },
+        "1658926750c5c8cc30-1": {
+          "type": "collection",
+          "settings": {
+            "title": "Women",
+            "tab_collection": "leren-broeken",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "1658926750c5c8cc30-0",
+        "1658926750c5c8cc30-1"
+      ],
+      "settings": {
+        "wrapper": "normal",
+        "title": "Elevating Offices",
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "16572785390d760d1b",
+    "text",
+    "main",
+    "165892538227116636",
+    "16589257115bc75de7",
+    "165892495741a91672",
+    "165892539244459e90",
+    "16589262384d762f34",
+    "165892509785d16382",
+    "1658926392fc648322",
+    "1658926750a66a5504"
+  ]
+}
