@@ -1,6 +1,8 @@
 <!-- /sections/featured-collection.liquid -->
 {%- liquid
   assign collection = collections[section.settings.collection] | default: false
+  assign products = collection.products
+  assign heading =  section.settings.title
   assign columns = settings.products_per_row_on_desktop | plus: 0
   assign columns_small = columns | at_most: 2
   assign columns_mobile = settings.products_per_row_on_mobile | plus: 0
@@ -14,16 +16,10 @@
     assign carousel = true
   endif
 
-  if collection == false
-    assign collection_title = 'homepage.onboarding.collection_title' | t
-  else
-    assign collection_title = collection.title | escape
+  assign mobile_class = ' grid--mobile'
+  if section.settings.enable_slider_mobile
+    assign mobile_class = ' carousel--mobile'
   endif
-
-  assign grid_mobile = ' grid--mobile'
-	if section.settings.enable_slider
-  	assign grid_mobile = ' grid--mobile-carousel'
-	endif
 -%}
 
 {%- style -%}
@@ -59,12 +55,13 @@
   id="FeaturedCollection--{{ section.id }}"
   class="featured-collection featured-collection--{{ layout }}"
   data-section-id="{{ section.id }}"
-  data-section-type="featured-collection">
+  data-section-type="featured-collection"
+  data-columns="{{ columns }}">
 
-  {%- if section.settings.show_title and collection.handle != 'all' -%}
+  {%- if heading != blank and collection.handle != 'all' -%}
     <div class="featured-collection__title">
-      <div class="wrapper">
-        <h2 class="section__heading">{{ collection_title }}</h2>
+      <div class="wrapper wrapper--full">
+        <h2 class="section__heading">{{ heading | escape }}</h2>
 
         {%- if settings.show_spacer_lines -%}
           <hr>
@@ -73,19 +70,20 @@
     </div>
   {%- endif -%}
 
-  {%- assign collection_empty = false -%}
-  {%- if collection.products == empty -%}
-    {%- assign collection_empty = true -%}
-  {%- endif -%}
-
-  <div class="wrapper">
+  <div class="wrapper wrapper--full">
     <div class="featured-collection__container {% if carousel %}carousel__container{% else %}grid__container{% endif %}">
-      <div class="{% if carousel %}carousel{% else %}grid{{ grid_mobile }}{% endif %}{% if collection_empty %} featured-collection--empty{% endif %}"{% if carousel %} data-collection-slider{% endif %}>
+      <div class="{% if carousel %}carousel{% else %}grid{% endif %}{{ mobile_class }}{% if products.size == 0 %} featured-collection--empty{% endif %}"{% if carousel %} data-slider data-slider-id="slider--{{ section.id }}"{% endif %}>
         {%- if collection -%}
           {% comment %} Check if there are any products in the collection {% endcomment %}
-          {%- if collection_empty == false -%}
+          {%- if products.size > 0 -%}
             {%- for product in collection.products limit: products_limit -%}
-              {%- render 'product-grid-item', product: product, carousel: carousel -%}
+              {%- if carousel -%}
+                {%- assign animation_delay = forloop.index0 -%}
+              {%- else -%}
+                {%- assign assign columns = settings.products_per_row_on_desktop | plus: 0 -%}
+                {%- assign animation_delay = forloop.index0 | modulo: columns | times: 1 -%}
+              {%- endif -%}
+              {%- render 'product-grid-item', product: product, carousel: carousel, animation_delay: animation_delay -%}
             {%- endfor -%}
           {%- else -%}
             <div class="collection--no-results">
@@ -94,14 +92,23 @@
           {%- endif -%}
         {%- else -%}
           {%- for i in (1..products_limit) -%}
-            {%- render 'product-grid-item--onboarding', carousel: carousel -%}
+            {%- capture index -%}{%- cycle 1,2,3,4,5,6 -%}{%- endcapture -%}
+            {%- if carousel -%}
+              {%- assign animation_delay = forloop.index0 -%}
+            {%- else -%}
+              {%- assign assign columns = settings.products_per_row_on_desktop | plus: 0 -%}
+              {%- assign animation_delay = forloop.index0 | modulo: columns | times: 1 -%}
+            {%- endif -%}
+            {%- render 'product-grid-item--onboarding', carousel: carousel, index: index, animation_delay: animation_delay -%}
           {%- endfor -%}
         {%- endif -%}
       </div>
     </div>
 
-    {%- if section.settings.show_collection_button and collection_empty == false -%}
-      <a class="btn btn--{{ section.settings.button_style }} btn--view-all" href="{{ collection.url | default: '#' }}">{{ 'collections.general.view_collection' | t }}</a>
+    {%- if section.settings.show_collection_button -%}
+      <div{% if settings.animations_enabled %} data-aos="fade-up" data-aos-delay="{{ columns | plus: 1 | times: 150 }}" data-aos-anchor="#FeaturedCollection--{{ section.id }}"{% endif %}>
+        <a class="btn btn--{{ section.settings.button_style }} btn--view-all" href="{{ collection.url | default: '#!' }}">{{ 'collections.general.view_collection' | t }}</a>
+      </div>
     {%- endif -%}
   </div>
 </section>
@@ -116,9 +123,15 @@
       "label": "Collection"
     },
     {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Best Sellers"
+    },
+    {
       "type": "range",
       "id": "products_rows",
-      "label": "Products rows",
+      "label": "Product rows",
       "default":2,
       "min": 1,
       "max": 12,
@@ -128,17 +141,11 @@
       "type": "select",
       "id": "products_layout",
       "label": "Layout",
-      "info": "Product images slideshow will be disabled if layout is set to Carousel.",
       "default": "grid",
       "options": [
         { "value": "grid", "label": "Grid" },
         { "value": "carousel", "label": "Carousel" }
       ]
-    },
-    {
-      "type": "checkbox",
-      "id": "show_title",
-      "label": "Show collection title"
     },
     {
       "type": "checkbox",
@@ -151,8 +158,11 @@
       "id": "button_style",
       "label": "Button style",
       "options": [
-        { "value": "primary", "label": "Primary" },
-        { "value": "secondary", "label": "Secondary" }
+        { "label": "Text", "value": "text" },
+        { "label": "Small button", "value": "primary btn--small" },
+        { "label": "Large button", "value": "primary" },
+        { "label": "Small outline button", "value": "secondary btn--small" },
+        { "label": "Large outline button", "value": "secondary" }
       ]
     },
     {
@@ -170,7 +180,7 @@
     },
     {
       "type": "checkbox",
-      "id": "enable_slider",
+      "id": "enable_slider_mobile",
       "label": "Enable slider",
       "default": true,
       "info": "Horizontal slider in mobile layout."
