@@ -1,8 +1,15 @@
 {% comment %} Settings {% endcomment %}
-{%- assign subheading = section.settings.subheading -%}
-{%- assign heading = section.settings.title -%}
-{%- assign html = section.settings.html -%}
-{%- assign bg_color = section.settings.bg_color -%}
+{%- liquid
+  assign subheading = section.settings.subheading
+  assign heading = section.settings.title
+  assign html = section.settings.html
+  assign bg_color = section.settings.bg_color
+
+  assign wrapper_class = 'wrapper'
+  if section.settings.wrapper == 'full'
+    assign wrapper_class = 'wrapper wrapper--full'
+  endif
+-%}
 
 {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
   {%- style -%}
@@ -13,7 +20,7 @@
 {%- endif -%}
 
 <section id="CustomHtml--{{ section.id }}" class="custom-html-section" data-section-id="{{ section.id }}" data-section-type="custom-html">
-  <div class="wrapper">
+  <div class="{{ wrapper_class }}">
     {%- unless heading == blank and subheading == blank -%}
       <div class="page-title">
         {%- if heading != blank -%}
@@ -47,6 +54,20 @@
       "id": "html",
       "label": "Custom HTML",
       "default": "<p>Once you write some HTML, it will render right here.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "wrapper",
+      "label": "Width",
+      "default": "normal",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "full", "label": "Wide" }
+      ]
     },
     {
       "type": "header",
