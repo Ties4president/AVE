@@ -1,0 +1,301 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": false
+      }
+    },
+    "1657628385b6d1f5ee": {
+      "type": "section-accordions",
+      "blocks": {
+        "1657628385007d145c-0": {
+          "type": "text",
+          "settings": {
+            "title": "I forgot my password, how do I log in?",
+            "text": "<p>CLICK ‘’ACCOUNT’’ AT THE TOP RIGHT OF THE WEBSITE, THEN CLICK ‘’FORGOT  PASSWORD?’’. AFTER ENTERING THE EMAIL ADDRESS LINKED TO YOUR ACCOUNT, AN EMAIL WILL BE SENT  ALLOWING YOU TO RE-SET YOUR PASSWORD. <\/p>"
+          }
+        },
+        "1657628385007d145c-1": {
+          "type": "text",
+          "settings": {
+            "title": "I have not received an order confirmation.. What should I do?",
+            "text": "<p>THE E-MAIL CONFIRMATION THAT IS SEND AFTER YOU HAVE PLACED YOUR ORDER MIGHT TAKE A COUPLE OF MINUTES TO SHOW UP IN YOUR E-MAIL BOX. YOU COULD TRY CHECKING YOUR SPAM INBOX, AS THE MESSAGE MAY HAVE BEEN DELIVERED THERE DEPENDING ON YOUR E-MAIL SETTINGS. IF YOU HAVEN’T RECEIVED YOUR CONFIRMATION E-MAIL AFTER THAT, PLEASE GET IN CONTACT WITH US.<\/p>"
+          }
+        },
+        "1657628385007d145c-2": {
+          "type": "text",
+          "settings": {
+            "title": "An item is ‘out of stock’, when will it come back?",
+            "text": "<p>OUR ARMA WEBSHOP OFFERS A SELECTION OF PRODUCTS THAT ARE GENERALLY ALL IN STOCK. HOWEVER, DUE TO HIGH DEMAND IT MAY OCCUR THAT CERTAIN PRODUCTS ARE SOLD OUT OCCASIONALLY. IF YOU WOULD LIKE TO RECEIVE AN E-MAIL NOTIFICATION WHEN PRODUCTS COME BACK IN STOCK, PLEASE CLICK ON THE ITEM IN THE WEBSHOP AND SCROLL DOWN TO ‘LET ME KNOW WHEN THIS ITEM IS BACK IN STOCK’ AND FILL IN YOUR E-MAIL ADRESS. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1657628385007d145c-0",
+        "1657628385007d145c-1",
+        "1657628385007d145c-2"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "A C C O U N T \/ O R D E R S",
+        "text": "",
+        "tabs_bg_color": "",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "accordion-section-1": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_1_4": {
+          "type": "text",
+          "settings": {
+            "title": "What forms of payment do you accept?",
+            "text": "<p>WE ACCEPT ONLINE PAYMENTS ONLY.  <br\/>ALL PAYMENTS PROCESSING AND VITAL CUSTOMER INFORMATION IS QUICK, EASY AND SECURE. <br\/><br\/>ARMA ACCEPTS THE FOLLOWING FORMS OF PAYMENT: <\/p><p><strong>IDEAL<br\/>MASTERCARD<br\/>AMERICAN EXPRESS<br\/>VISA<br\/>PAYPAL<br\/>KLARNA<\/strong><\/p>"
+          }
+        },
+        "accordion_block_1_1": {
+          "type": "text",
+          "settings": {
+            "title": "Is my payment data safe with you?",
+            "text": "<p>ALL DIRECT PAYMENT GATEWAYS ADHERE TO THE STANDARDS SET BY PCI-DSS AS MANAGED BY THE PCI SECURITY STANDARDS<br\/>COUNCIL, WHICH IS A JOINT EFFORT OF BRANDS LIKE VISA, MASTERCARD AND AMERICAN EXPRESS. <\/p>"
+          }
+        },
+        "accordion_block_1_3": {
+          "type": "text",
+          "settings": {
+            "title": "What currencies can I pay in?",
+            "text": "<p>EURO IS THE ONLY AVAILABLE CURRENCY TO PAY IN AT THE MOMENT.<\/p>"
+          }
+        },
+        "accordion_block_1_2": {
+          "type": "text",
+          "settings": {
+            "title": "Is VAT\/TAX included in the final price and how do I claim VAT back?",
+            "text": "<p>VAT\/TAX IS APPLIED TO ALL THE PRODUCT PRICES THAT ARE SHOWN ON THE WEBSITE. <br\/>AT THIS MOMENT WE DO NOT OFFER ANY TAX REFUND ON ITEMS PURCHASED AT ARMASTORE.COM<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_1_4",
+        "accordion_block_1_1",
+        "accordion_block_1_3",
+        "accordion_block_1_2"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "P A Y M E N T S \/ S A F E T Y",
+        "text": "",
+        "tabs_bg_color": "",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "accordion-section-2": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_2_0": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "text": "<p>SHIPPING CAN TAKE UP TO 5-7 BUSINESS DAYS <br\/><br\/>FOR ITEMS AVAILABLE FOR IMMEDIATE PURCHASE, WE OFFER ONLY ONE FORM OF SHIPMENT. <\/p>"
+          }
+        },
+        "e485c6d7-879b-49f4-b637-38b0f9c3cb8f": {
+          "type": "text",
+          "settings": {
+            "title": "Can I track my order?",
+            "text": "<p>YES, YOU CAN TRACK THE SHIPMENT OF YOUR ORDER VIA THE TRACKING NUMBER PROVIDED BY THE COURIER. IF YOU HAVE AN ARMA ACCOUNT, YOU CAN FIND THE STATUS OF YOUR ORDER UNDER ‘MY ORDERS’ IN YOUR ACCOUNT. <\/p>"
+          }
+        },
+        "accordion_block_2_1": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "text": "<p>SHIPPING RATES CAN VARY DEPENDING ON YOUR REGION AND ARE CALCULATED AT CHECKOUT.<\/p>"
+          }
+        },
+        "accordion_block_2_2": {
+          "type": "text",
+          "settings": {
+            "title": "Is there free shipping?",
+            "text": "<p>YES, WE OFFER FREE SHIPPING ON DOMESTIC ORDERS.<\/p>"
+          }
+        },
+        "accordion_block_2_3": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>ARMASTORE.COM CURRENTLY SHIPS ORDERS TO THE FOLLOWING COUNTRIES: <em>AUSTRIA, BELGIUM, DENMARK, FINLAND, FRANCE, GERMANY, GREECE, ITALY, LUXEMBOURG, THE NETHERLANDS, NORWAY, PORTUGAL, SPAIN AND SWEDEN.<\/em><br\/><br\/>PLEASE NOTE THAT SHIPPING RATES COULD VARY DEPENDING ON YOUR REGION.<\/p>"
+          }
+        },
+        "d6439b3f-a57b-45cc-a2d5-7aa29399f3b5": {
+          "type": "text",
+          "settings": {
+            "title": "What courier company do you ship with?",
+            "text": "<p>ORDERS FROM OUR WEBSHOP ARE SHIPPED WITH DHL PARCEL.<\/p>"
+          }
+        },
+        "24032524-370d-476e-b316-5d54024db607": {
+          "type": "text",
+          "settings": {
+            "title": "Are there additional costs when my order arrives?",
+            "text": "<p>ALL DUTY AND TAX\/VAT WILL BE CALCULATED AND PAID DURING CHECKOUT, SO THERE WILL BE NO ADDITIONAL COSTS DUE UPON DELIVERY. <br\/>IF YOU WOULD LIKE MORE INFORMATION PLEASE CONTACT CUSTOMER SERVICE AT CUSTOMERSERVICE@ARMASTORE.NL<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_2_0",
+        "e485c6d7-879b-49f4-b637-38b0f9c3cb8f",
+        "accordion_block_2_1",
+        "accordion_block_2_2",
+        "accordion_block_2_3",
+        "d6439b3f-a57b-45cc-a2d5-7aa29399f3b5",
+        "24032524-370d-476e-b316-5d54024db607"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "S H I P P I N G \/ D E L I V E R Y",
+        "text": "",
+        "tabs_bg_color": "",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "accordion-section-4": {
+      "type": "section-accordions",
+      "blocks": {
+        "d5356673-8b4b-4b3c-9683-6f0634eec30b": {
+          "type": "text",
+          "settings": {
+            "title": "How do I return a purchase?",
+            "text": "<p>TO FILE A RETURN ON ONLINE PURCHASE, PLEASE LOG IN TO YOUR ARMA ACCOUNT. CLICK ON ‘MY ACCOUNT’ TO VIEW YOUR PREVIOUS ORDERS. SELECT THE CONCERNED ORDER, CLICK ‘RETURN ORDER’ AND CHECK THE BOXES ON OF THE ITEM(S) THAT YOU WISH TO RETURN. PLEASE FILL IN THE REASON OF RETURN UNDER THE ITEMS. <\/p><p>AFTER THAT, CLICK ON ‘COMPLETE RETURN’ TO FINALIZE YOUR RETURN. YOU WILL RECEIVE AN E-MAIL CONFIRMATION SHORTLY WITH THE DETAILS OF YOUR RETURN AND THE PROCESSING OF YOUR REFUND. <\/p><p>YOU CAN NOW SEND THE ITEMS BACK TO US. RETURNING A PRODUCT FOR REFUND OR EXCHANGE IS COMPLIMENTARY. PLEASE USE THE RETURN STICKER INCLUDED IN YOUR BOX TO RETURN THE ARTICLES VIA A DHL ACCESS POINT.<\/p><p>FOR QUESTIONS OR MORE INFORMATION, PLEASE GET IN TOUCH WITH OUR CUSTOMER SERVICE TEAM VIA CUSTOMERSERVICE@ARMASTORE.COM<\/p>"
+          }
+        },
+        "6a75a450-1441-4a0d-9fa9-09a9524f49f2": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to receive my refund?",
+            "text": "<p>WE AIM TO ISSUE REFUNDS AS QUICKLY AS POSSIBLE. YOU SHOULD RECEIVE YOUR REFUND WITHIN 7-10 BUSINESS DAYS AFTER YOUR RETURNED ITEMS ARE COLLECTED AT OUR HEADQUARTERS. <\/p>"
+          }
+        },
+        "accordion_block_4_1": {
+          "type": "text",
+          "settings": {
+            "title": "How long after I complete a purchase can I ask for a refund?",
+            "text": "<p>YOUR ORDER WILL BE ACCEPTED FOR REFUND OR EXCHANGE WHEN THE ITEM IS IN ORIGINAL CONDITION AND PACKAGING, SHIPPED BACK <strong>WITHIN 14 DAYS FROM THE DELIVERY DATE<\/strong>. THE ITEM(S) MUST RETURN TO US WITH ORIGINAL TAGS ATTACHED AND ACCOMPANIED BY THE RECEIPT OR RETURN FORM. WE WILL NOT ACCEPT ANY ITEMS THAT HAVE BEEN WORN, WASHED OR ALTERED IN ANY WAY. <\/p>"
+          }
+        },
+        "accordion_block_4_2": {
+          "type": "text",
+          "settings": {
+            "title": "How much can I get refunded?",
+            "text": "<p>IN THE CASE WHEN THE PRODUCT IS UNDAMAGED, YOU AREELIGIBLE FOR A FULL REFUND.<br\/><br\/>IN THE CASE WHEN A PRODUCT HAS BEEN DAMAGED, DOES NOT HAVE THEIR TAGS OR SHOW SIGNS OF WEAR, YOU ARE NOT ELIGIBLE FOR A REFUND.<\/p>"
+          }
+        },
+        "5382d272-9543-4bf8-9789-0faa79c2464d": {
+          "type": "text",
+          "settings": {
+            "title": "Can I return an item bought during Sale?",
+            "text": "<p>YES. SALE ITEMS CAN BE RETURNED UNDER OUR REGULAR RETURN POLICY<\/p>"
+          }
+        },
+        "1c02545f-c2cd-401a-815e-4e35645ed60d": {
+          "type": "text",
+          "settings": {
+            "title": "Download your return form here",
+            "text": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/8607\/0782\/files\/ARMA_FORM_UPS_ACCESS_POINT_81.pdf?v=1659956723\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0651\/8607\/0782\/files\/ARMA_FORM_UPS_ACCESS_POINT_81.pdf?v=1659956723\">Click here to download<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d5356673-8b4b-4b3c-9683-6f0634eec30b",
+        "6a75a450-1441-4a0d-9fa9-09a9524f49f2",
+        "accordion_block_4_1",
+        "accordion_block_4_2",
+        "5382d272-9543-4bf8-9789-0faa79c2464d",
+        "1c02545f-c2cd-401a-815e-4e35645ed60d"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "R E T U R N S \/ R E F U N D S",
+        "text": "",
+        "tabs_bg_color": "",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "accordion-section-3": {
+      "type": "section-accordions",
+      "blocks": {
+        "a88acf4a-9d1f-4499-86f6-b74cbb0bbfde": {
+          "type": "text",
+          "settings": {
+            "title": "Are A R M A products made of real leather?",
+            "text": "<p>YES. ALL ARMA PRODUCTS ARE MADE OF REAL LEATHER, SUEDE OR SHEARLING. <\/p>"
+          }
+        },
+        "cb707b53-5f1b-44da-aa06-170dc6b5988b": {
+          "type": "text",
+          "settings": {
+            "title": "Where are A R M A products made?",
+            "text": "<p>ARMA CHOOSES TO WORK WITH EXPERIENCED AND QUALIFIED MANUFACTURERS IN VARIED PARTS OF THE WORLD. MOST OF OUR ITEMS ARE MADE IN TURKEY, WHERE OUR PRIVATELY OWNED FACTORY IS LOCATED. HERE WE OVERSEE THE ENTIRE PRODUCTION PROCESS OF OUR COLLECTIONS AND CAN WE GUARANTEE THE WELLBEING OF OUR EMPLOYEES AND FACTORY WORKING CONDITIONS. OTHER PRODUCTION IS OUTSOURCED TO MANUFACTURES IN ASIA.<\/p>"
+          }
+        },
+        "c2a51f76-db1e-4725-95f6-10457573f671": {
+          "type": "text",
+          "settings": {
+            "title": "What leather is used to make A R M A products?",
+            "text": "<p>AT ARMA, WE USE DIFFERENT TYPES OF LEATHER QUALITIES TO CREATE OUR COLLECTIONS. THE LEATHER WE USE IS CAREFULLY SELECTED, OF THE HIGHEST QUALITY AND ALWAYS A BY-PRODUCT OF THE FOOD INDUSTRY.<br\/><br\/>LEATHER IS A NATURAL PRODUCT, THEREFOR THE DIFFERENT SHADINGS IN THE HIDES GIVE THE ITEM ITS OWN PECULIARITY AND NO HIDE IS IDENTICAL TO ANOTHER. UNIQUE INDIVIDUAL MARKINGS MAY APPEAR ON A SKIN AND SHOULD NOT BE CONSIDERED AS DEFECTS. <\/p>"
+          }
+        },
+        "7928fcf6-6243-4ab9-bcf2-e7899c852d90": {
+          "type": "text",
+          "settings": {
+            "title": "How do I take care of my items?",
+            "text": "<p>ARMA PRODUCTS ARE MADE WITH THE HIGHEST QUALITY MATERIALS, DESIGN AND CRAFTMANSHIP. ALL OF OUR ITEMS ARE MADE FROM GENUINE LEATHER, SUEDE OR SHEARLING. <\/p><p>TAKING CARE OF LEATHER ITEMS IS ESSENTIAL, AS IT IS A MATERIAL THAT EVOLVES OVER TIME. PLEASE REFER TO THE FOLLOWING ADVICE WHEN CARING FOR OUR ITEMS: <br\/><br\/><strong>SHEARLING<\/strong> OR SHEEPSKIN: BEFORE WEARING SHEARLING, WE RECOMMEND THAT YOU TREAT IT WITH A WATER-REPELLENT SPRAY. SPRAY IT AT AROUND 30CM FROM THE JACKET ON THE FABRIC, AND LET IT AIRDRY AFTER (PREFERABLY OUTSIDE). WHEN SPRAYED IN, SHEARLING CAN HANDLE RAIN AND SNOW QUITE WELL. IF YOUR COAT UNEXPECTEDLY BECOMES REALLY WET, PLEASE SHAKE OFF THE EXCESS WATER AND BLOT DRY WITH A CLEAN TOWEL. PLEASE ALWAYS STORE YOUR SHEARLING ITEMS HANGING.<\/p><p><strong>SUEDE: <\/strong>BEFORE WEARING SUEDE ITEMS, WE RECOMMEND THAT YOU TREAT THEM WITH A WATER-REPELLENT SPRAY. SPRAY IT AT AROUND 30CM FROM THE JACKET ON THE FABRIC, AND LET IT AIRDRY AFTER. AVOID PROLONGED EXPOSURE TO SUN- OR ARTIFICIAL LIGHT AND MOISTURE. WHEN STORING YOUR SUEDE ITEMS, PLEASE USE A CLOTH OR COTTON GARMENT BAG, DO NOT USE A PLASTIC BAG. PLEASE ALWAYS STORE YOUR SUEDE ITEMS HANGING. <\/p><p><strong>LEATHER: <\/strong>BEFORE WEARING LEATHER ITEMS, WE RECOMMEND THAT YOU TREAT THEM WITH A WATER-REPELLENT SPRAY. SPRAY IT AT AROUND 30CM FROM THE ITEMS ON THE FABRIC, AND LET IT AIRDRY AFTER. AVOID PROLONGED EXPOSURE TO SUN- OR ARTIFICIAL LIGHT AND MOISTURE. PLEASE ALWAYS STORE YOUR LEATHER ITEMS HANGING.<\/p><p><strong>STRETCH<\/strong> <strong>LEATHER: <\/strong>STRETCH LEATHER IS A MATERIAL WE MOSTLY USE FOR OUR TROUSERS. THIS IS THE ONLY MATERIAL THAT YOU ARE ABLE TO MACHINE WASH YOURSELF. PLEASE REFER TO OUR STRETCH LEATHER WASHING GUIDE HERE. BEFORE WEARING THESE ITEMS, WE RECOMMEND THAT YOU TREAT THEM WITH A WATER-REPELLENT SPRAY. SPRAY IT AT AROUND 30CM FROM THE ITEMS ON THE FABRIC, AND LET IT AIRDRY AFTER. AVOID PROLONGED EXPOSURE TO SUN- OR ARTIFICIAL LIGHT AND MOISTURE.<\/p><p><strong>WOOL:<\/strong> TO CLEAN YOUR WOOL ITEMS, WE STRONGLY ADVISE YOU TO BRING THEM TO A DRY CLEANING SERVICE. PLEASE DO NOT MACHINE WASH OUR WOOL ITEMS, AS THEY CAN SHRINK, LOOSEN, CRACK, STRETCH AND EVEN DISSOLVE SINCE THE FABRIC IS NOT SUITABLE FOR THIS TREATMENT. <\/p><p>PLEASE NOTE THAT OUR NONE OF OUR ITEMS (WITH THE EXCEPTION OF STRETCH LEATHER) CAN BE MACHINE WASHED. FOR CLEANING OR REMOVING STAINS WE ADVISE YOU BRING THEM TO A PROFESSIONAL LEATHER SPECIALIST. WOOL ITEMS CAN BE BE BROUGHT TO A DRY CLEANER. <br\/><\/p>"
+          }
+        },
+        "0adff1e2-aebe-4c72-be85-611e91b7b1fa": {
+          "type": "text",
+          "settings": {
+            "title": "How do I wash my leather items?",
+            "text": "<p>ALL ITEMS ARE MADE FROM GENUINE LEATHER, SUEDE OR SHEARLING. PRODUCTS MADE FROM THESE MATERIALS CANNOT BE WASHED IN A WASHING MACHINE. <br\/><\/p><p>HOWEVER IF YOU BOUGHT OUR STRECH LEATHER QUALITY, THESE PRODUCTS CAN BE WASHED IN THE MACHINE. PLEASE, CAREFULLY READ THE CARE INSTRUCTION FIRST.<br\/><br\/>FOR CLEANING OR REMOVING STAINS FROM THE OTHER QUALITIES WE ADVISE YOU BRING THEM TO A PROFESSIONAL LEATHER SPECIALIST. <br\/><br\/>WOOL ITEMS CAN BE BE BROUGHT TO A DRY CLEANER.<\/p><p>WHEN WEARING YOUR ARMA ITEMS REGULARLY, WE ADVISE YOU TO HANG THEM OUTSIDE (IN DRY WEATHER) ONCE IN A WHILE TO GET RID OF POSSIBLE SMELL. <\/p>"
+          }
+        },
+        "652bed8c-24d1-42e9-b6a2-5d4c2f8a5b8a": {
+          "type": "text",
+          "settings": {
+            "title": "How has A R M A committed to sustainability and responsible shopping?",
+            "text": "<p>ARMA IS EAGER TO IMPLEMENT A CONSCIOUS WAY OF WORKING IN EVERY ASPECT OF OUR BUSINESS. WE ARE CONSTANTLY SEARCHING FOR WAYS TO DEVELOP PRODUCTS THAT HAVE A LOWER IMPACT ON THE ENVIRONMENT.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a88acf4a-9d1f-4499-86f6-b74cbb0bbfde",
+        "cb707b53-5f1b-44da-aa06-170dc6b5988b",
+        "c2a51f76-db1e-4725-95f6-10457573f671",
+        "7928fcf6-6243-4ab9-bcf2-e7899c852d90",
+        "0adff1e2-aebe-4c72-be85-611e91b7b1fa",
+        "652bed8c-24d1-42e9-b6a2-5d4c2f8a5b8a"
+      ],
+      "settings": {
+        "title": "",
+        "subheading": "P R O D U C T \/ C A R E",
+        "text": "",
+        "tabs_bg_color": "",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657628385b6d1f5ee",
+    "accordion-section-1",
+    "accordion-section-2",
+    "accordion-section-4",
+    "accordion-section-3"
+  ]
+}
