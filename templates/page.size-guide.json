@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "text": {
+      "type": "section-text",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p><strong>SIZE GUIDE<\/strong><\/p>",
+            "size": 150
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The size chart is a guide to help you find the right size for you.<\/p><p>As many pieces are designed in a unique way, we suggest you also refer to the specific product lengths<br\/>and measurements provided in the description. <\/p>",
+            "size": 140
+          }
+        },
+        "165fdc0f-6c2b-4eec-a80c-6f677561e995": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SIZE CONVERSION<\/p>",
+            "size": 100
+          }
+        },
+        "3cfa608d-2158-490c-996c-06fe9b2116d8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WOMEN.png",
+            "image_width": 500,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "text",
+        "165fdc0f-6c2b-4eec-a80c-6f677561e995",
+        "3cfa608d-2158-490c-996c-06fe9b2116d8"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true
+      }
+    },
+    "1658494058a935a21d": {
+      "type": "section-text",
+      "blocks": {
+        "fa39f319-aa87-4280-b82a-784913712b1a": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>BODY MEASUREMENTS<\/p>",
+            "size": 160
+          }
+        },
+        "b420e0f6-15ea-44f8-87ea-6b4c195acb96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/001.png",
+            "image_width": 500,
+            "image_link": ""
+          }
+        },
+        "16584940586bc1d477-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>HOW TO MEASURE<br\/><br\/><strong>Chest | <\/strong>Measure around the fullest part of your chest.<br\/><strong><br\/>Waist | <\/strong>Measure at the narrowest part of your waistline.<br\/><br\/><strong>Hip | <\/strong>Measure at the fullest part of your hips. <\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "fa39f319-aa87-4280-b82a-784913712b1a",
+        "b420e0f6-15ea-44f8-87ea-6b4c195acb96",
+        "16584940586bc1d477-2"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    }
+  },
+  "order": [
+    "text",
+    "main",
+    "1658494058a935a21d"
+  ]
+}
