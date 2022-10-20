@@ -4,6 +4,10 @@
   assign heading = section.settings.title
   assign bg_color = section.settings.bg_color
   assign blocks_count = section.blocks.size
+
+  assign animations_enabled = settings.animations_enabled
+  assign animation_anchor = '#Press--' | append: section.id
+  assign animation_delay = 150
 -%}
 
 {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
@@ -15,14 +19,28 @@
 {%- endif -%}
 
 <section id="Press--{{ section.id }}" class="press" data-section-id="{{ section.id }}" data-section-type="press">
-  <div class="wrapper wrapper--small">
+  <div class="wrapper wrapper--narrow">
     {%- unless heading == blank -%}
-      <h4 class="press__heading subheading-text">{{ heading }}</h4>
+      <h4 class="press__heading subheading-text"
+        {% if animations_enabled %}
+          data-aos="fade-up"
+          data-aos-anchor="{{ animation_anchor }}"
+          data-aos-delay="{{ animation_delay }}"
+        {% endif %}>
+        {{- heading -}}
+      </h4>
     {%- endunless -%}
   </div>
 
   {%- if blocks_count > 0 -%}
-    <div class="press__items" data-press-items data-count="{{ blocks_count }}">
+    <div class="press__items"
+      data-press-items
+      data-count="{{ blocks_count }}"
+      {% if animations_enabled %}
+        data-aos="fade-up"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-delay="{{ animation_delay | plus: 150 }}"
+      {% endif %}>
       {%- for block in section.blocks -%}
         {%- liquid
           assign text = block.settings.text
@@ -35,50 +53,65 @@
           endif
         -%}
 
-        <div class="press__item" {{ block.shopify_attributes }}>
-          <div class="wrapper wrapper--small">
-            {%- if link != blank and has_nested_links == false -%}
-              <a href="{{ link }}" aria-label="{{ 'homepage.onboarding.press.read_more' | t }}">{{ text }}</a>
-            {%- elsif link != blank and has_nested_links -%}
-              {{- text -}}
-              <a href="{{ link }}" aria-label="{{ 'homepage.onboarding.press.read_more' | t }}" class="press__item__read-more">
-                {{- 'homepage.onboarding.press.read_more' | t -}}
-                {%- render 'icon-arrow-right' -%}
-              </a>
-            {%- else -%}
-              {{- text -}}
-            {%- endif -%}
+        <div class="press__item" {{ block.shopify_attributes }} data-slide-item>
+          <div class="press__item__inner">
+            <div class="wrapper wrapper--narrow">
+              {%- if link != blank and has_nested_links == false -%}
+                <a href="{{ link }}" aria-label="{{ 'homepage.onboarding.press.read_more' | t }}">{{ text }}</a>
+              {%- elsif link != blank and has_nested_links -%}
+                {{- text -}}
+                <a href="{{ link }}" aria-label="{{ 'homepage.onboarding.press.read_more' | t }}" class="press__item__read-more">
+                  {{- 'homepage.onboarding.press.read_more' | t -}}
+                  {%- render 'icon-arrow-right' -%}
+                </a>
+              {%- else -%}
+                {{- text -}}
+              {%- endif -%}
+            </div>
           </div>
         </div>
       {%- endfor -%}
     </div>
 
-    <div class="press__logos press__logos--{{ blocks_count }}">
+    <div class="press__logos press__logos--{{ blocks_count }}"
+      {% if animations_enabled %}
+        data-aos="fade-up"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-delay="{{ animation_delay | plus: 150 }}"
+      {% endif %}>
       <div class="press__logos-slider" data-logo-slider>
         {%- for block in section.blocks -%}
-          {%- assign image = block.settings.press_logo -%}
+          {%- liquid
+            assign image = block.settings.press_logo
+            assign image_width = block.settings.logo_width
+            assign image_height = image_width
+
+            unless image == blank
+              assign image_height = image_width | divided_by: image.aspect_ratio
+              assign image_url_pattern = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+              assign image_widths = "[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048, 2450, 2700, 3000, 3350, 3750, 4100]"
+            else
+
+            endunless
+          -%}
 
           <div class="press__logos-slide" data-logo-slide>
-            <div class="press__logo">
+            <div class="press__logo" style="--image-width: {{ image_width }}px; --image-height: {{ image_height }}px;">
               {%- unless image == blank -%}
-                {%- assign image_url_pattern = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {%- assign image_widths = "[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048, 2450, 2700, 3000, 3350, 3750, 4100]" -%}
 
-                <img class="lazyload press__logo-image"
+                <img class="press__logo-image lazyload"
                   src="{{ 'blank.gif' | asset_img_url: '1x1' }}"
                   data-src="{{ image_url_pattern }}"
                   data-widths="{{ image_widths }}"
                   data-aspectratio="{{ image.aspect_ratio }}"
                   data-sizes="auto"
-                  alt="{{ image.alt }}"
-                  style="width: {{ block.settings.logo_width | append: 'px' }}">
+                  alt="{{ image.alt }}">
                   <noscript>
-                    <img src="{{ image | img_url: '1024x' }}" alt="{{ image.alt }}" class="press__logo-image" style="width: {{ block.settings.logo_width | append: 'px' }}">
+                    <img src="{{ image | img_url: '1024x' }}" alt="{{ image.alt }}" class="press__logo-image">
                   </noscript>
               {%- else -%}
-                {%- capture counter -%}{%- cycle 1, 2, 3, 4, 5, 6 -%}{%- endcapture -%}
-                <div class="press__logo-image--placeholder placeholder-svg--overlayed" style="width: {{ block.settings.logo_width | append: 'px' }}">
-                  {{- 'product-' | append: counter | placeholder_svg_tag: 'placeholder-svg-filled' -}}
+                <div class="press__logo-image press__logo-image--placeholder placeholder-svg--overlayed" style="width: {{ image_width | append: 'px' }}">
+                  {{- 'logo' | placeholder_svg_tag: 'placeholder-svg-filled' -}}
                 </div>
               {%- endunless -%}
             </div>
@@ -89,23 +122,35 @@
   {%- else -%}
     {%- comment -%} Onboarding items {%- endcomment -%}
 
-    <div class="press__items press__items--onboarding" data-press-items data-count="4">
+    <div class="press__items press__items--onboarding"
+      data-press-items
+      data-count="4"
+      {% if animations_enabled %}
+        data-aos="fade-up"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-delay="{{ animation_delay | plus: 150 }}"
+      {% endif %}>
       {%- for i in (1..4) -%}
-        <div class="press__item" {{ block.shopify_attributes }}>
-          <div class="wrapper wrapper--small">
+        <div class="press__item" {{ block.shopify_attributes }} data-slide-item>
+          <div class="wrapper wrapper--narrow">
             {{- 'homepage.onboarding.press.text' | t -}}
           </div>
         </div>
       {%- endfor -%}
     </div>
 
-    <div class="press__logos press__logos--{{ blocks_count }}">
+    <div class="press__logos press__logos--{{ blocks_count }}"
+      {% if animations_enabled %}
+        data-aos="fade-up"
+        data-aos-anchor="{{ animation_anchor }}"
+        data-aos-delay="{{ animation_delay | plus: 300 }}"
+      {% endif %}>
       <div class="press__logos-slider" data-logo-slider>
         {%- for i in (1..4) -%}
           <div class="press__logos-slide" data-logo-slide>
             <div class="press__logo">
               {%- capture counter -%}{%- cycle 1, 2, 3, 4 -%}{%- endcapture -%}
-              <div class="press__logo-image--placeholder placeholder-svg--overlayed" style="width: {{ block.settings.logo_width | append: 'px' }}">
+              <div class="press__logo-image press__logo-image--placeholder placeholder-svg--overlayed" style="width: {{ block.settings.logo_width | append: 'px' }}">
                 {{- 'product-' | append: counter | placeholder_svg_tag: 'placeholder-svg-filled' -}}
               </div>
             </div>
@@ -120,7 +165,7 @@
 {
   "name": "Press",
   "class": "press-section",
-  "max_blocks": 5,
+  "max_blocks": 10,
   "settings": [
     {
       "type": "text",
