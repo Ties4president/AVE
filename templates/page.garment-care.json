@@ -1,0 +1,179 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true
+      }
+    },
+    "1658494880b311d7c5": {
+      "type": "section-text",
+      "blocks": {
+        "16584948808870db06-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>GARMENT CARE<\/p>",
+            "size": 180
+          }
+        },
+        "16584948808870db06-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To make sure your garments last, it’s important to treat them well. Explore our tips on how to best care for your clothing. Taking care of leather items is essential as it is a meterial that evolvers over time. Please refer to the following adivice when caring for our items.<\/p>",
+            "size": 110
+          }
+        }
+      },
+      "block_order": [
+        "16584948808870db06-0",
+        "16584948808870db06-2"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "1657277653b1c367db": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657277653d36799de-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 80,
+            "text_color": "text-dark",
+            "subheading": "S T O R I N G",
+            "title": "",
+            "text": "<p>By storing garments properly and keeping their unique structure in mind, you can prevent them from losing shape or becoming damaged.<br\/><br\/><strong>LEATHER\/SUEDE JACKETS:<\/strong><br\/>Please always store your leather\/suede items hanging. Use a cotton garment bag to store your items in (do not use a plastic bag). And please avoid prolonged exposure to sun- or artificial light as this might cause discolaration. <br\/><br\/><br\/><strong>SHEARLINGS:<\/strong> <br\/>Please always store your shearling items hanging and in cotton garment bag. Before wearing your shearling, we recommend that you treat it with a water-repellent spray. Spray it at around 30cm from the jacket on the fabric, and let it airdry after (preferably outside). When sprayed in, shearling can handle rain and snow quite well. If your coat unexpectedly becomes really wet, please shake off the excess water and blot dry with a clean towel. <br\/><br\/><br\/><strong>TROUSERS:<\/strong><br\/>Please always store your trousers hanging to prevent wrinkels. <br\/><br\/><\/p><p><strong>WOOL:<\/strong><br\/>We use a premium quality blend that is made from 80 percent pure wool. Our pieces are made from a double-faced wool that required a particular finishing technique only possible through hand stitching. Make sure that wool items are clean and do not have food stains or body oils when storing them away, to prevent moths. Always store your wool jackets hanging on a sturdy clothing hanger. <\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        },
+        "1657277653d36799de-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/03.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1657277653d36799de-1",
+        "1657277653d36799de-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "16572786443822a5fa": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657278644d80c634a-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "W A S H I N G\/ D R Y C L E A N I N G",
+            "title": "",
+            "text": "<p>Being thoughtful about the ways you wash and dry clothing is an easy step towards more sustainable living, as well as prolonging the life of your garments. Always read the care label and try not to wash garments more than is necessary.<br\/><br\/><strong>STRETCH LEATHER\/SUEDE TROUSERS:<\/strong><\/p><p>These items can be machine washed, due to a special treatment during the manufacturing process. <br\/>Before and after each wash, run an empty cycle to remove any detergent residue from the drum.<br\/>First turn the item inside out. <strong>Do not<\/strong> fold it and always wash your leather\/suede separately. <br\/><br\/>1. Wash at low temperture:<br\/>Only wash your stretch leather or suede trousers at the lowest temperature possible. Wash cold or <strong>not <\/strong>above a maximum of 30°C. <\/p><p>2. Wash on the shortest cycle:<br\/>Select the most delicate and shortest program on the machine.<br\/>We recommend a wool program without spin cycle. <br\/><\/p><p>3. Small amount of liquid detergent:<br\/>Liquid detergents dissolve better than powders and are the most sensitive option for hand or machine washing. Use a very small amount of soft liquid detergent or liquid baby shampoo and pour it into the drawer of the machine (not directly into the drum). <br\/><br\/>4. Remove item immediatley after the cycle is over:<br\/>Once the program is finished, remove your item immediately from the<br\/>washing machine as soon as the cycle is over. <br\/>Please make sure <strong>not<\/strong> to; wring your item dry, tumble dry, dry in direct sunlight or on a radiator. <br\/>Lay your item flat to dry on a laundry rack or on the ground. Leave to dry up to 24\/48 hours and use a towel to avoid colour transfer.<br\/><\/p><p>5. Ironing:<br\/>Once dry, first gently rub the leather between your hands to improve<br\/>the item suppleness. Use an ironing board and carefully iron front and<br\/>back of the item while using a clean cloth in between the iron and<br\/>leather.<br\/><br\/>* Be aware that machine washing will alter the aspect and feel of this item.<br\/>Our items are machine washable for hygiene purposes only. On bright colors, color fading may occur. <br\/>The item will regain shape, suppleness and shine by wearing it.<br\/><br\/><strong>SHEARLINGS:<br\/><\/strong>Airing your shearling outside during warmer months is often enough to regain a fresh feeling. <br\/><strong><br\/>NON STRETCH TROUSERS:<\/strong><br\/>Entrust its cleaning to a leather specialist. You can also use a garment refresher spray for trousers with lining.<br\/><br\/><strong>LEATHER JAKCETS:<\/strong><br\/>Entrust its cleaning to a leather specialist. You can also use a garment refresher spray for jackets with lining. Please keep a distance between the spray and the jacket when applying. <br\/><br\/><br\/><br\/><br\/><\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "text",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657278644d80c634a-1"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1657279083ff4e35c4": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "165727908389878e50-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "Subheading",
+            "title": "Our Story",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        },
+        "165727908389878e50-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "Welcome to Palo Alto",
+            "heading_size": 100,
+            "text": "Describe in a few words your special products, collection, or brand.",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "165727908389878e50-1",
+        "165727908389878e50-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1658494880b311d7c5",
+    "1657277653b1c367db",
+    "16572786443822a5fa",
+    "1657279083ff4e35c4"
+  ]
+}
