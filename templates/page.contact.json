@@ -3,52 +3,104 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "show_page_title": true
+        "show_page_title": false
       }
     },
-    "contact-form": {
-      "type": "section-contact-form",
+    "1657287140fdf86782": {
+      "type": "section-custom-content",
       "blocks": {
-        "contact-form-1": {
+        "1657287140c03e309b-1": {
           "type": "text",
           "settings": {
-            "title": "Name",
-            "required": false
+            "text_position": "left",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "C O N T A C T",
+            "title": "",
+            "text": "<p>Our customer care team is available to assist between 09:00 to 17:00 on Monday to Friday.<br\/><br\/>We are closed during weekends and Dutch bank holidays.<br\/><br\/>Email: customerservice@armastore.com<br\/><br\/>For HR enquiries please visit our <a href=\"https:\/\/www.linkedin.com\/company\/arma-leder\/\" target=\"_blank\" title=\"https:\/\/www.linkedin.com\/company\/arma-leder\/\">LinkedIn<\/a><\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
           }
         },
-        "contact-form-2": {
-          "type": "email",
+        "1657287140c03e309b-0": {
+          "type": "image",
           "settings": {
-            "title": "Email",
-            "required": true
-          }
-        },
-        "525d6106-ca9f-4a7b-a024-d3e39ee3bca9": {
-          "type": "telephone",
-          "settings": {
-            "title": "Phone",
-            "required": false
-          }
-        },
-        "contact-form-3": {
-          "type": "body",
-          "settings": {
-            "title": "Message",
-            "required": true
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/16.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
           }
         }
       },
       "block_order": [
-        "contact-form-1",
-        "contact-form-2",
-        "525d6106-ca9f-4a7b-a024-d3e39ee3bca9",
-        "contact-form-3"
+        "1657287140c03e309b-1",
+        "1657287140c03e309b-0"
       ],
-      "settings": {}
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "16572794325a9c774e": {
+      "type": "section-icons-row",
+      "blocks": {
+        "1657279432a77bd73a-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "help-circle",
+            "title": "FAQ",
+            "text": "<p>Looking for a quick answer? All your frequently asked questions can be found here. <a href=\"https:\/\/armastore.com\/pages\/faq\" target=\"_blank\" title=\"https:\/\/armastore.com\/pages\/faq\">GO TO FAQS<\/a><\/p>"
+          }
+        },
+        "1657279432a77bd73a-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "mail",
+            "title": "Email",
+            "text": "<p>Send us an email and we'll get back to you within 24hrs.<br\/><a href=\"mailto:press@email.com\" title=\"mailto:press@email.com\">CUSTOMERSERVICE@ARMASTORE.COM<\/a><br\/><br\/><\/p>"
+          }
+        },
+        "1657279432a77bd73a-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "star",
+            "title": "Partnership",
+            "text": "<p>Interested in partnering with us?<br\/><a href=\"mailto:MARKETING@ARMALEDER.NL\" title=\"mailto:MARKETING@ARMALEDER.NL\">MARKETING@ARMALEDER.NL<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1657279432a77bd73a-0",
+        "1657279432a77bd73a-1",
+        "1657279432a77bd73a-2"
+      ],
+      "settings": {
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 25,
+        "bg_color": "#ffffff",
+        "box_color": "",
+        "text_color": "#333333"
+      }
     }
   },
   "order": [
     "main",
-    "contact-form"
+    "1657287140fdf86782",
+    "16572794325a9c774e"
   ]
 }
