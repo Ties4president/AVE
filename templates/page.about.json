@@ -1,142 +1,308 @@
 {
   "sections": {
-    "featured-image": {
-      "type": "section-featured-image",
+    "text": {
+      "type": "section-text",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p><strong>A B O U T<\/strong><\/p>",
+            "size": 100
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A family story established in 1985, build upon shared opinions and the belief that timeless and singular pieces are true treasures that have no competition.<\/p>",
+            "size": 140
+          }
+        },
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Leather gets better with age and we could not agree more. It is that like leather, that A R M A has not stopped growing and maturing over time, making experience and the ability to adapt to time our best allies.<\/p>",
+            "size": 100
+          }
+        },
+        "1419b1cc-450c-48b7-b616-38b3b3ffbbc0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Maral and Arden, the second generation and current managers of the brand revolutionized the way of understanding and working with this material since their father launched the brand in the mid-eighties. <br\/>While defining a multifaceted and contemporary luxury taste they strongly believe in a future that puts longevity above fast fashion trends.<\/p>",
+            "size": 100
+          }
+        },
+        "a422d6a5-4513-4c0a-8a8e-de153defd825": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Under the vision of the second generation A R M A continuous to grow while assisting customers infuse their wardrobe with style and A R M A investment pieces.<br\/><\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "text",
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7",
+        "1419b1cc-450c-48b7-b616-38b3b3ffbbc0",
+        "a422d6a5-4513-4c0a-8a8e-de153defd825"
+      ],
       "settings": {
-        "image_height": "sixty-fifty-height-hero",
-        "text_position": "center-center",
-        "enable_parallax": false,
-        "image": "shopify:\/\/shop_images\/coming_home.jpg",
-        "image_position": "center-center",
-        "overlay_opacity": 20,
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "16572785390d760d1b": {
+      "type": "section-split-images",
+      "blocks": {
+        "1657278539e26c0580-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/49.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        },
+        "1657278539e26c0580-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/11.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "1657278539e26c0580-0",
+        "1657278539e26c0580-1"
+      ],
+      "settings": {
+        "image_height": "full-height",
+        "mobile_layout": "stacked",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
         "text_color": "text-light",
-        "title": "Our Story",
-        "subheading": "The Missing Link for life™",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
         "button_text": "",
         "button_link": "",
         "button_style": "primary"
       }
     },
-    "16505844625c2aa401": {
-      "type": "section-image-with-text",
+    "1657277653b1c367db": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657277653d36799de-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 80,
+            "text_color": "text-dark",
+            "subheading": "M I S S I O N",
+            "title": "",
+            "text": "<p>Elegant minimalism and innovative craftsmanship are fused at A R M A.  <br\/><br\/>A youthful and contemporary approach to designs and experimental constructions leads to seasonal collections that strives for exceptional quality. Placing importance on creating investment pieces without compromising on quality or design. Committed to blending consistent<br\/>quality with fine materials to create ready-to-wear pieces.<br\/><\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        },
+        "1657277653d36799de-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/03.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1657277653d36799de-1",
+        "1657277653d36799de-0"
+      ],
       "settings": {
-        "section_height": "seven-fifty-height-hero",
-        "text_position": "left",
-        "image": "shopify:\/\/shop_images\/dr-robert-colett.jpg",
-        "image_background": false,
-        "bg_position": "center-center",
-        "subheading": "",
-        "heading": "",
-        "text": "<p><br\/>In the early 1990’s our founder and Veterinarian, Dr. Robert Collette, was concerned by recurring health issues in his clients. Pets were coming in with chronic hip & joint pain, dry itchy skin, digestion issues and an overall lack of energy. He recognized that commercially processed kibble was not providing the nutrition needed for pets to thrive and thus created The Missing Link superfood supplements.<br\/><br\/><\/p>",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "16505846732a2f6741": {
-      "type": "section-rich-text",
-      "settings": {
-        "text_position": "center",
-        "top_image_width": 100,
-        "subheading": "",
-        "heading": "",
-        "text": "<p>Since then food has come a long way, but the need for additional support is still very much needed. In honor of our founder, we continue to pioneer fresh, high-quality and effective solutions for a range of health needs your pet may have.<\/p><p> <\/p><p>Discover our sister brands Absorbine equine products and Absorbine Pet Care for additional animal health solutions.<\/p>",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "primary",
-        "secondary_button_text": "",
-        "secondary_button_url": "",
-        "secondary_button_style": "secondary",
-        "bg_color": ""
-      }
-    },
-    "16505847369bb5737b": {
-      "type": "section-rich-text",
-      "settings": {
-        "text_position": "center",
-        "top_image_width": 100,
-        "subheading": "",
-        "heading": "Our Sister Brands",
-        "text": "",
-        "button_text": "",
-        "button_url": "",
-        "button_style": "primary",
-        "secondary_button_text": "",
-        "secondary_button_url": "",
-        "secondary_button_style": "secondary",
-        "bg_color": ""
-      }
-    },
-    "16505848119c52e436": {
-      "type": "section-image-with-text",
-      "settings": {
-        "section_height": "sixty-fifty-height-hero",
-        "text_position": "left",
-        "image": "shopify:\/\/shop_images\/Stocksy_txp510d0098Qch200_Small_874328_1.jpg",
-        "image_background": true,
-        "bg_position": "center-center",
-        "subheading": "Topical Pet Health Solutions",
-        "heading": "ABSORBINE PET",
-        "text": "<p>We’re on a mission to relentlessly develop trustworthy and high-quality topical solutions for pets in an ever-changing world.<\/p>",
-        "button_text": "Visit Absorbine Pet",
-        "button_url": "https:\/\/absorbinepet.com\/",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "165058496910fe46bc": {
-      "type": "section-image-with-text",
-      "settings": {
-        "section_height": "sixty-fifty-height-hero",
-        "text_position": "right",
-        "image": "shopify:\/\/shop_images\/Stampede.jpg",
-        "image_background": true,
-        "bg_position": "center-center",
-        "subheading": "The Horse Worlds Most Trusted Name® since 1892",
-        "heading": "ABSORBINE",
-        "text": "<p><strong>Absorbine<\/strong>® offers the safest and highest quality horse care products for muscle and joint care, fly control, hoof care, grooming, and leather care as well as nutritional supplements.<\/p>",
-        "button_text": "Visit Absorbine®",
-        "button_url": "",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "1650585092573a781d": {
-      "type": "section-rich-text",
-      "settings": {
-        "text_position": "center",
-        "top_image_width": 100,
-        "subheading": "The Missing Link's",
-        "heading": "Zoo and rescue Initiative",
-        "text": "<p>From a black rhino named Lucy at the Kansas City Zoo to a pack of wolves at the Wildlife Waystation in Los Angeles to a Maltese named EmmyLou in Ipswitch, MA, we’re bringing proven, healthy goodness to a wide variety of animals.  We believe in giving back in the best way we know how – by providing the best nutrition to our furry and feathered friends, both domestic and wild.  Check out how we’ve been able to help support the wellbeing of animals across the country – big and small!  <\/p>",
-        "button_text": "Zoo Blogs",
-        "button_url": "https:\/\/missing-link-products.myshopify.com\/blogs\/blog\/importance-nutrition-animals-black-rhino-study",
-        "button_style": "primary",
-        "secondary_button_text": "",
-        "secondary_button_url": "",
-        "secondary_button_style": "secondary",
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
         "bg_color": ""
       }
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "show_page_title": false
+        "show_page_title": true
+      }
+    },
+    "16572786443822a5fa": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657278644d80c634a-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/IMG_3973.jpg",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "secondary btn--small"
+          }
+        },
+        "1657278644d80c634a-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "P R O D U C T I O N",
+            "title": "",
+            "text": "<p>Unique to our industry is that we control two-thirds of the entire production process.<br\/><\/p><p>The new production factories in Turkey opened in 2018 and this enables<br\/>us to make changes in design and fabrics quickly and easily to satisfy our retailers but mostly learning new methods and techniques rapidly to keep our customers inspired.<br\/><\/p><p>A R M A also operates as the manufacturing partner for several high-end fashion brands.<br\/><\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "text",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657278644d80c634a-0",
+        "1657278644d80c634a-1"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1657279083ff4e35c4": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "165727908389878e50-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "Subheading",
+            "title": "Our Story",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        },
+        "165727908389878e50-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "Welcome to Palo Alto",
+            "heading_size": 100,
+            "text": "Describe in a few words your special products, collection, or brand.",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "165727908389878e50-1",
+        "165727908389878e50-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "16572790971bd51f8d": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "1657279097d3e5d161-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "Welcome to Palo Alto",
+            "heading_size": 100,
+            "text": "Describe in a few words your special products, collection, or brand.",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "1657279097d3e5d161-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "Subheading",
+            "title": "Our Story",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_text": "Learn More",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657279097d3e5d161-0",
+        "1657279097d3e5d161-1"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
       }
     }
   },
   "order": [
-    "featured-image",
-    "16505844625c2aa401",
-    "16505846732a2f6741",
-    "16505847369bb5737b",
-    "16505848119c52e436",
-    "165058496910fe46bc",
-    "1650585092573a781d",
-    "main"
+    "text",
+    "16572785390d760d1b",
+    "1657277653b1c367db",
+    "main",
+    "16572786443822a5fa",
+    "1657279083ff4e35c4",
+    "16572790971bd51f8d"
   ]
 }
