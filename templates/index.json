@@ -140,8 +140,8 @@
         "tab-1": {
           "type": "collection",
           "settings": {
-            "title": "Jackets",
-            "tab_collection": "leren-jas",
+            "title": "shoes",
+            "tab_collection": "shoes",
             "show_image": false,
             "overlay_opacity": 10,
             "description": "",
