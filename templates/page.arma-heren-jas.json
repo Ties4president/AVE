@@ -1,0 +1,169 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": false
+      }
+    },
+    "9b89ea8f-522d-4019-8d77-527d92754c10": {
+      "type": "section-image-with-text",
+      "disabled": true,
+      "settings": {
+        "section_height": "six-fifty-height",
+        "text_position": "left",
+        "wrapper": "normal",
+        "image": "shopify:\/\/shop_images\/Arma_Leren_Jas_93e37d5f-986d-4138-be1f-34e50cb7c06c.png",
+        "image_background": false,
+        "bg_position": "center-top",
+        "text_alignment": "center",
+        "subheading": "ARMA LEREN JAS",
+        "heading": "ARMA LEREN JASSEN",
+        "heading_size": 120,
+        "text": "<p>Shop nu de nieuwe Arma leren jassen collectie. Moderne leren jassen van het fijnste leer en hoogwaardige materialen. De leren jassen horen thuis in elke garderobe.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "text",
+        "video_url": "",
+        "bg_color": "",
+        "is_link": false,
+        "link_url": ""
+      }
+    },
+    "8d783cad-6bd7-4cc7-9821-908b77d5d8e8": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "leren-jas",
+        "title": "ARMA Leren Jassen",
+        "products_rows": 2,
+        "products_layout": "grid",
+        "show_collection_button": true,
+        "button_style": "secondary btn--small",
+        "bg_color": "",
+        "enable_slider_mobile": true
+      }
+    },
+    "8273653c-9299-4612-8ef9-0138831d4096": {
+      "type": "section-text",
+      "disabled": true,
+      "blocks": {
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>LEREN JASSEN<\/p>",
+            "size": 100
+          }
+        },
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>ARMA LEREN JAS<\/p>",
+            "size": 100
+          }
+        },
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Onze leren jassen zijn tijdloze klassiekers. De leren jassen worden vervaardigd van de hoogste kwaliteit leer. Onze leren jassen horen in elke garderobe thuis. Kies jij voor een Cropped Leren Jas, Oversized Leren Jas of een Fitter Leren Jas? Verkrijgbaar in verschillende kleuren. Combineer de leren jassen met onze leren leggings en maak je leren outfit compleet.<\/p><p><\/p><p>Meld je hieronder aan voor de nieuwsbrief en ontvang 10% korting op je eerste aankoop.<\/p>",
+            "size": 100
+          }
+        },
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-3": {
+          "type": "button",
+          "settings": {
+            "btn_text": "",
+            "btn_link": "",
+            "btn_style": "primary btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-0",
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-1",
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-2",
+        "template--16572811116798__8273653c-9299-4612-8ef9-0138831d4096-16660859034af7e3a6-3"
+      ],
+      "settings": {
+        "text_position": "center",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "81636906-f3bf-41ea-92fe-598d9909c6fa": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--16572811116798__81636906-f3bf-41ea-92fe-598d9909c6fa-1666102175654b1b9a-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Pam_Leren_Jas.webp",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--16572811116798__81636906-f3bf-41ea-92fe-598d9909c6fa-1666102175654b1b9a-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "Leren items",
+            "title": "",
+            "text": "<p>Onze leren jassen zijn tijdloze klassiekers. De leren jassen worden vervaardigd van de hoogste kwaliteit leer. Onze leren jassen horen in elke garderobe thuis. Kies jij voor een Cropped Leren Jas, Oversized Leren Jas of een Fitter Leren Jas? Verkrijgbaar in verschillende kleuren. Combineer de leren jassen met onze leren leggings en maak je leren outfit compleet.<\/p><p><\/p><p>Meld je hieronder aan voor de nieuwsbrief en ontvang 10% korting op je eerste aankoop.<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary btn--small",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16572811116798__81636906-f3bf-41ea-92fe-598d9909c6fa-1666102175654b1b9a-0",
+        "template--16572811116798__81636906-f3bf-41ea-92fe-598d9909c6fa-1666102175654b1b9a-1"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "7b914bcc-bead-4a64-88a7-b886a2a55da7": {
+      "type": "section-newsletter",
+      "settings": {
+        "flex_align": "align--middle-center",
+        "wrapper": "normal",
+        "text_color": "text-dark",
+        "title": "Ontvang 10% korting op je eerste aankoop.",
+        "text": "<p>Meld je aan voor de nieuwsbrief<\/p>",
+        "extra_fields": "",
+        "button_text": "",
+        "bg_color": "",
+        "image_height": "three-fifty-height",
+        "image_position": "center-center",
+        "overlay_opacity": 10
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9b89ea8f-522d-4019-8d77-527d92754c10",
+    "8d783cad-6bd7-4cc7-9821-908b77d5d8e8",
+    "8273653c-9299-4612-8ef9-0138831d4096",
+    "81636906-f3bf-41ea-92fe-598d9909c6fa",
+    "7b914bcc-bead-4a64-88a7-b886a2a55da7"
+  ]
+}
