@@ -1,4 +1,4 @@
-{%- render 'list-collections' -%}
+{%- render 'list-collections', circles: false -%}
 
 {% schema %}
   {
@@ -16,18 +16,22 @@
       },
       {
         "type": "select",
+        "id": "wrapper",
+        "label": "Width",
+        "default": "full",
+        "options": [
+          { "label": "Normal" , "value": "normal" },
+          { "label": "Wide", "value": "full" }
+        ]
+      },
+      {
+        "type": "select",
         "id": "layout",
         "label": "Layout",
         "default": "carousel",
         "options": [
-          {
-            "value": "grid",
-            "label": "Grid"
-          },
-          {
-            "value": "carousel",
-            "label": "Carousel"
-          }
+          { "value": "grid", "label": "Grid" },
+          { "value": "carousel", "label": "Carousel" }
         ]
       },
       {
@@ -35,45 +39,63 @@
         "id": "columns",
         "label": "Collections per row",
         "default": 3,
-        "min": 1,
+        "min": 2,
         "max": 4,
         "step": 1
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Height",
+        "min": 25,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "text_size",
+        "label": "Text size",
+        "default": 100,
+        "min": 75,
+        "max": 150,
+        "step": 5,
+        "unit": "%"
+      },
+      {
+        "type": "header",
+        "content": "Text"
       },
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Collection list"
+        "default": "Collections"
+      },
+      {
+        "type": "header",
+        "content": "Button"
       },
       {
         "type": "text",
         "id": "button_text",
-        "label": "View collection button text",
-        "default": "Shop all"
+        "label": "Text",
+        "default": "Shop All",
+        "info": "Desktop only"
       },
       {
         "type": "select",
         "id": "button_style",
-        "label": "Button style",
+        "label": "Style",
         "default": "secondary",
         "options": [
-          { "label": "Primary", "value": "primary" },
-          { "label": "Secondary", "value": "secondary" }
+          { "label": "Text", "value": "text" },
+          { "label": "Small button", "value": "primary btn--small" },
+          { "label": "Large button", "value": "primary" },
+          { "label": "Small outline button", "value": "secondary btn--small" },
+          { "label": "Large outline button", "value": "secondary" }
         ]
-      },
-      {
-        "type": "header",
-        "content": "Items"
-      },
-      {
-        "type": "range",
-        "id": "overlay_opacity",
-        "label": "Overlay opacity",
-        "min": 0,
-        "max": 95,
-        "step": 5,
-        "unit": "%",
-        "default": 20
       },
       {
         "type": "header",
@@ -90,23 +112,28 @@
         "label": "Text",
         "default": "light",
         "options": [
-          {
-            "value": "light",
-            "label": "Light"
-          },
-          {
-            "value": "dark",
-            "label": "Dark"
-          }
+          { "value": "light", "label": "Light" },
+          { "value": "dark", "label": "Dark" }
         ]
       },
       {
+        "type": "range",
+        "id": "overlay_opacity",
+        "label": "Text contrast",
+        "info": "Improves readability of text",
+        "min": 0,
+        "max": 95,
+        "step": 5,
+        "unit": "%",
+        "default": 10
+      },
+      {
         "type": "header",
-        "content": "Mobile slider"
+        "content": "Mobile layout"
       },
       {
         "type": "checkbox",
-        "id": "enable_slider",
+        "id": "enable_slider_mobile",
         "label": "Enable slider",
         "default": true,
         "info": "Horizontal slider in mobile layout."
@@ -125,7 +152,7 @@
           {
             "type": "image_picker",
             "id": "custom_collection_image",
-            "label": "Replacement image"
+            "label": "Image"
           }
         ]
       }
