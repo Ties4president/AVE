@@ -3,14 +3,12 @@
 
   Accepts:
   - filter: {Object} collection.filter or search.filter (required)
-  - index: {Number} Index of the item in products loop
 
   Usage:
-  {% render 'filter', filter: filter, index: index %}
+  {% render 'filter', filter: filter %}
 {%- endcomment -%}
 
 {%- liquid
-  assign file_extension = 'png'
   assign is_active = false
   assign active_values = filter.active_values.size
   if active_values > 0
@@ -33,34 +31,34 @@
     <span>{{ filter.label }}</span>
 
     <span class="collection__filter__count" data-count="{{ active_values | default: 0 }}" data-collection-filter-group-count>
-      {%- render 'icon-plus' -%}
-      {%- render 'icon-minus' -%}
+      {%- render 'icon-toggle-plus' -%}
+      {%- render 'icon-toggle-minus' -%}
     </span>
   </button>
 
+  {%- assign option_name_handle_separator = filter.label | handle | prepend: ',' | append: ',' -%}
+  {%- assign enable_color_swatches = settings.enable_color_swatches_collection -%}
+
   {%- liquid
-    assign option_name_handle_separator = filter.label | handle | prepend: ',' | append: ','
+  if enable_color_swatches
+    comment
+      Determine if current option matches swatch handle translations
+    endcomment
+    assign is_swatch_option = false
+    assign swatch_translation = 'general.swatches.color' | t
+    assign translation_string = swatch_translation | remove: '  ' | replace: ', ', ',' | replace: ' ,', ',' | replace: ',', '____' | handle | replace: '____', ',' | append: ',' | prepend: ','
 
-    if settings.enable_color_swatches
-      comment
-        Determine if current option matches swatch handle translations
-      endcomment
-
-      assign is_swatch_option = false
-      assign swatch_translation = 'general.swatches.color' | t
-      assign translation_string = swatch_translation | remove: '  ' | replace: ', ', ',' | replace: ' ,', ',' | replace: ',', '____' | handle | replace: '____', ',' | append: ',' | prepend: ','
-
-      if translation_string contains option_name_handle_separator
-        assign is_swatch_option = true
-      endif
+    if translation_string contains option_name_handle_separator
+      assign is_swatch_option = true
     endif
-  -%}
+  endif
+-%}
 
   <div class="collection__filter-tags-wrapper{% if is_active %} is-expanded{% endif %}" id="CollectionFilter--{{ filter.label | handle }}" aria-hidden="{% if is_active %}false{% else %}true{% endif %}" data-collapsible-container style="{% if is_active %}height:auto;{% endif %}">
     <ul class="collection__filter-tags{% if is_swatch_option %} collection__filter-tags--swatches{% endif %}" data-collapsible-content>
       {%- case filter.type -%}
-        {%- when 'list' -%}
-      
+        {%- when 'list' or 'boolean' -%}
+
           {%- for filter_value in filter.values -%}
             {%- liquid
               capture filter_classes
@@ -81,18 +79,18 @@
               {% endif %}>
               {%- if is_swatch_option -%}
                 {%- assign swatch_color = filter_value.label | split: ' ' | last | handle -%}
-                <span class="swatch__element filter__button" data-tooltip="{{ filter_value.value | escape_once | capitalize }}">
+                <span class="swatch__button filter__button" data-tooltip="{{ filter_value.value | escape_once | capitalize }}">
                   <input type="checkbox"
-                    class="filter__input"
+                    class="swatch__input filter__input"
                     name="{{ filter_value.param_name }}"
                     value="{{ filter_value.value }}" 
                     id="filter-{{ filter.label | escape }}-{{ forloop.index }}"
                     {% if filter_value.active %}checked{% endif %}
                     {% if filter_value.count == 0 and filter_value.active == false %}disabled{% endif %}>
 
-                  <label class="swatch__element filter__button" for="filter-{{ filter.label | escape }}-{{ forloop.index }}" data-swatch="{{ filter_value.label | escape_once }}">
+                  <label class="swatch__label filter__button" for="filter-{{ filter.label | escape }}-{{ forloop.index }}" data-swatch="{{ filter_value.label | escape_once }}" data-tooltip="{{ filter_value.label | escape_once }}">
                     <span class="visually-hidden">{{ filter_value.label }}</span>
-                    <span class="swatch__color swatch__color--{{ filter_value.label | handle }}" style="color: {{ swatch_color }}; background-color: {{ swatch_color }}; background-image: url({{ filter_value.label | handle | append: '.' | append: file_extension | asset_url }})"></span>
+                    {% render 'icon-check' %}
                   </label>
                 </span>
               {%- else -%}
@@ -141,6 +139,7 @@
               assign filter_max_placeholder = filter_max_value
             endif
           -%}
+
           <li class="{{ filter_classes }}"
             {% if filter_value.active %}
               data-link-remove
@@ -149,7 +148,7 @@
               data-link-add
             {% endif %}>
             <div class="filter__price" data-range-holder>
-              <div class="filter__price__range range" data-range-slider data-range-filter-update data-se-min="0" data-se-step="1" data-se-min-value="{{ filter_min_value }}" data-se-max-value="{{ filter_max_value }}" data-se-max="{{ filter_range_max | ceil }}">
+              <div class="filter__price__range range" data-range-slider data-range-filter-update data-se-min="0" data-se-step="1" data-se-min-value="{{ filter_min_value | default: 0 }}" data-se-max-value="{{ filter_max_value | default: filter_range_max }}" data-se-max="{{ filter_range_max | ceil }}">
                 <div class="range__dot range__dot--left" data-range-left>
                   <span>&nbsp;</span>
                 </div>
@@ -170,19 +169,13 @@
                     class="filter__price__input"
                     name="{{ filter.min_value.param_name }}"
                     id="filter-price-{{ filter.label | escape }}-GTE"
-                    {% if filter.min_value.value %}
-                      {% if uses_comma_decimals %}
-                        value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' | round }}"
-                      {% else %}
-                        value="{{ filter.min_value.value | money_without_currency | replace: ',', '' | round }}"
-                      {% endif %}
-                    {% else %}
+                    {% if filter_min_value %}
+                      value="{{ filter_min_value | round }}"
                     {% endif %}
                     type="number"
                     placeholder="{{ filter_min_value | round }}"
                     min="0"
                     max="{{ filter_range_max }}">
-
                   <label for="filter-price-{{ filter.label | escape }}-GTE">{{ 'collection.filters.from' | t }}</label>
                 </div>
                 <div class="filter__price__spacer">-</div>
@@ -194,19 +187,14 @@
                     class="filter__price__input"
                     name="{{ filter.max_value.param_name }}"
                     id="filter-price-{{ filter.label | escape }}-LTE"
-                    {% if filter.max_value.value %}
-                      {% if uses_comma_decimals %}
-                        value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' | round }}"
-                      {% else %}
-                        value="{{ filter.max_value.value | money_without_currency | replace: ',', '' | round }}"
-                      {% endif %}
+                    {% if filter_max_value and filter_max_value != filter_range_max %}
+                      value="{{ filter_max_value | ceil }}"
                     {% endif %}
                     type="number"
                     placeholder="{{ filter_max_placeholder | ceil }}"
                     min="0"
                     max="{{ filter_range_max | ceil }}">
-
-                  <label for="filter-price-to-{{ filter.label }}-{{ index }}">{{ 'collection.filters.to' | t }}</label>
+                  <label for="filter-price-{{ filter.label | escape }}-LTE">{{ 'collection.filters.to' | t }}</label>
                 </div>
               </div>
             </div>
