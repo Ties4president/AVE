@@ -112,7 +112,7 @@
         "tab-2": {
           "type": "collection",
           "settings": {
-            "title": "Wool Coats",
+            "title": "pants",
             "tab_collection": "pants",
             "show_image": false,
             "overlay_opacity": 10,
@@ -127,7 +127,7 @@
           "type": "collection",
           "settings": {
             "title": "Stretch Trousers",
-            "tab_collection": "leren-broeken",
+            "tab_collection": "shirts",
             "show_image": false,
             "overlay_opacity": 10,
             "description": "",
