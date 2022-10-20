@@ -46,27 +46,28 @@
 			aria-labelledby="StoreAvailabilitiesModalProductTitle"
 			data-store-availability-modal
 		>
+			<button
+				type="button"
+				class="drawer__close-button store-availabilities-modal__close js-modal-close-store-availability-modal text-link"
+				aria-label="{{ 'general.accessibility.close_drawer' | t }}"
+			>
+				{%- render 'icon-close-small' -%}
+			</button>
+			
 			<div class="store-availabilities-modal__header">
+				
 				<div class="store-availabilities-modal__product-information">
-					<h2
+					<h3
 						id="StoreAvailabilitiesModalProductTitle"
 						class="store-availabilities-modal__product__title h4"
 						data-store-availability-modal-product__title
 					>
-					</h2>
+					</h3>
 
 					<p class="store-availabilities-modal__variant-title store-availability-small-text">
 						{{ product_variant.title | strip_html | escape }}
 					</p>
 				</div>
-
-				<button
-					type="button"
-					class="drawer__close-button store-availabilities-modal__close js-modal-close-store-availability-modal text-link"
-					aria-label="{{ 'general.accessibility.close_drawer' | t }}"
-				>
-					{%- render 'icon-close' -%}
-				</button>
 			</div>
 
 			<ul class="store-availabilities-list" role="list">
