@@ -4,6 +4,9 @@
     "swatches": {
       "color": "Cor"
     },
+    "size_chart": {
+      "size": "Tamanho"
+    },
     "accessibility": {
       "skip_to_content": "Pular para o conteúdo",
       "select_variant": "Selecione a lista suspensa de variantes",
@@ -11,27 +14,25 @@
       "show_products": "Mostrar produtos",
       "hide_products": "Ocultar produtos",
       "dismiss": "Liberar",
+      "close": "Fechar",
       "close_drawer": "Fechar menu",
+      "close_search_bar": "Fechar barra de pesquisa",
       "open_search_bar": "Abra a barra de pesquisa",
       "submit_search_request": "Envie sua solicitação de pesquisa",
       "search-field": "Pesquisar campo de texto",
-      "close_search_bar": "Fechar barra de pesquisa",
       "mobile_menu_toggle": "Abra o menu de navegação",
       "open_cart": "Carrinho aberto",
-      "arrow_previous": "Slide anterior",
-      "arrow_next": "Próximo slide",
       "increase": "Aumentar a quantidade",
       "decrease": "Diminuir quantidade",
       "submit_email": "Enviar",
       "subscribe_to_newsletter": "Assine a nossa newsletter",
-      "facebook_share": "Compartilhar no Facebook",
-      "twitter_share": "Compartilhar no Twitter",
-      "pinterest_share": "Compartilhe no Pinterest",
+      "link_copied": "Link copiado",
       "logo_image": "Imagem do logotipo",
       "unit_price_separator": "por",
       "my_account": "Minha Conta",
       "total_reviews": "análises totais",
       "view": "Ver",
+      "product_image_lightbox": "Abrir lightbox de imagem",
       "star_reviews_info": "{{rating_value}} de {{rating_max}} estrelas"
     },
     "meta": {
@@ -45,9 +46,21 @@
     },
     "newsletter_form": {
       "heading": "Boletim de Notícias",
-      "email": "email@exemplo.com",
+      "name": "Seu nome",
+      "first_name": "Primeiro nome",
+      "last_name": "Último nome",
+      "email": "Seu email",
+      "sign_up": "Inscrever-se",
       "newsletter_success": "Obrigado por se inscrever!",
-      "newsletter_error": "Ocorreu um erro ao enviar o formulário."
+      "newsletter_error": "Email é inválido ou já foi usado.",
+      "text_html": "Ao se inscrever, você concorda com nossa {{ privacy }} e {{ terms }}."
+    },
+    "cookies": {
+      "title": "Podemos armazenar cookies?",
+      "cookies_link": "cookies",
+      "text_html": "A Palo Alto usa {{ cookies }} para melhorar sua experiência de navegação.",
+      "accept": "Ok",
+      "decline": "não, obrigado"
     },
     "search": {
       "no_results_html": "A sua pesquisa por \"{{ terms }}\" não retornou resultados.",
@@ -66,6 +79,7 @@
       },
       "browse_categories": "Buscar categorias",
       "badge": {
+        "blog": "Blog",
         "page": "Página"
       }
     },
@@ -77,12 +91,18 @@
   },
   "blogs": {
     "article": {
-      "author_on_date_html": "Publicado por {{ author }} em {{ date }}",
+      "by_author": "Por {{ author }}",
       "older_post": "Publicação mais antiga",
       "newer_post": "Publicação mais recente",
       "tags": "Tags",
       "comment_meta_html": "{{ author }} em {{ date }}",
-      "read_more": "Leia mais"
+      "read_more": "Leia mais",
+      "onboarding": {
+        "title": "Título do post",
+        "excerpt": "Quando você criar um post, o conteúdo irá aparecer aqui.",
+        "tag": "tag",
+        "author": "Nome do autor"
+      }
     },
     "comments": {
       "title": "Deixe um comentário",
@@ -104,10 +124,13 @@
     "general": {
       "title": "Carrinho de Compras",
       "remove": "Remover",
-      "note": "Instruções especiais para o vendedor",
-      "discount": "Desconto",
+      "note": "Adicionar uma nota para o destinatário",
+      "discount_label": "Você está economizando {{ amount }} com {{ title }}",
       "subtotal": "Subtotal",
+      "subtotal_items": "Itens",
       "shipping_at_checkout": "Taxas e envio calculados no final",
+      "customer_note": "Instruções especiais para o vendedor",
+      "cart_notes_label": "Adicionar notas de pedido",
       "update": "Atualizar Carrinho",
       "checkout": "Finalizar",
       "empty": "O seu carrinho está vazio.",
@@ -116,13 +139,17 @@
       "limit_error": "Desculpe, parece que não temos esse produto em quantidade suficiente.",
       "continue_shopping": "Continue comprando",
       "close_cart": "Fechar Pedido",
-      "free_shipping_message_html": "Gaste <span data-free-shipping-amount>{{ amount }}<\/span> para se qualificar para frete grátis",
+      "free_shipping_message_html": "Gaste <span data-free-shipping-amount=\"\">{{ amount }}<\/span> para se qualificar para frete grátis",
       "qualified_shipping_message": "Parabéns! Seu pedido se qualifica para frete grátis"
     },
     "label": {
       "product": "Produto",
       "price": "Preço",
       "quantity": "Quantidade",
+      "items_with_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} itens"
+      },
       "total": "Total"
     }
   },
@@ -130,7 +157,6 @@
     "filters": {
       "apply": "Aplicar",
       "clear": "Limpar",
-      "clear_all": "Limpar tudo",
       "empty": "Nenhum produto encontrado",
       "from": "De",
       "filter_and_sort": "Filtrar e organizar",
@@ -146,7 +172,6 @@
         "other": "Exibindo {{ product_count }} de {{ count }} produtos"
       },
       "reset": "Redefinir",
-      "sort_by_label": "Organizar por",
       "sort_button": "Organizar",
       "title": "Coleção",
       "to": "Para",
@@ -158,17 +183,9 @@
       "list_collections": "Coleções",
       "all_of_collection": "Todos {{ collection }}",
       "view_collection": "Ver Coleção",
-      "no_matches": "Desculpe, não há nenhum produto nesta coleção",
+      "no_matches": "Desculpe, não há nenhum produto nesta coleção.",
       "no_matches_by_filter": "{{ products_count }} produtos encontrados com estes parâmetros.",
-      "shop": "Compre",
-      "items_with_count": {
-        "one": "{{ count }} item",
-        "other": "{{ count }} itens"
-      },
-      "products_with_count": {
-        "one": "{{ count }} produto encontrado",
-        "other": "{{ count }} produtos encontrados"
-      }
+      "shop": "Compre"
     },
     "sorting": {
       "title": "Ordenar por",
@@ -182,10 +199,6 @@
       "price_descending": "Preço maior para menor",
       "date_descending": "Data, mais recente para mais antigo",
       "date_ascending": "Data, mais antigo para mais recente"
-    },
-    "pagination": {
-      "load_more": "Carregar mais",
-      "loading": "Carregando mais"
     },
     "breadcrumbs": {
       "home": "Página Inicial",
@@ -246,7 +259,8 @@
       "update": "Atualizar Endereço",
       "cancel": "Cancelar",
       "edit": "Editar",
-      "delete": "Deletar"
+      "delete": "Deletar",
+      "delete_confirm": "Quer mesmo excluir o endereço?"
     },
     "login": {
       "title": "Entrar",
@@ -343,11 +357,9 @@
       "collection_title": "Título da Coleção",
       "single_product_title": "Mostrar um único produto",
       "single_product_description": "Quando escolher um produto, a sua descrição será preenchida aqui automaticamente.",
-      "single_product__text_html": "Adicione um produto para ficar em destaque na frente e no centro da sua página inicial. Para alterar o produto em destaque, reorganizar ou remover esta sessão, clique em Customizar Tema",
-      "single_product_cta": "Adicionar um Produto",
-      "single_product_cta_secondary": "Customizar Tema",
+      "single_collection_description": "Quando escolher uma coleção, a sua descrição será preenchida aqui automaticamente.",
+      "no_content": "Esta seção atualmente não tem conteúdo. Adicione conteúdo a esta seção usando a barra lateral.",
       "slideshow": {
-        "scroll_down": "Rolar para baixo",
         "heading": "Bem-vindo a Palo Alto",
         "subheading": "Este subtítulo ajuda a fornecer mais detalhes ao título acima.",
         "button_text": "Receber",
@@ -369,15 +381,15 @@
       },
       "icons_row": {
         "title": "Característica",
-        "content": "Palo Alto é um tema poderoso do Shopify que o diferencia dos demais com uma variedade de seções e recursos."
+        "text": "Palo Alto é um tema poderoso do Shopify que o diferencia dos demais com uma variedade de seções e recursos."
       },
       "testimonials": {
         "testimonial": "Use este depoimento como uma oportunidade para seus clientes discutirem sua marca e o que o diferencia da concorrência.",
-        "customer_name_1": "Sherlock Holmes",
-        "customer_name_2": "John Watson",
-        "customer_name_3": "Mycroft Holmes"
+        "customer_name_1": "John Edmonson",
+        "customer_name_2": "Eric Sanchez",
+        "customer_name_3": "Lindsay Smith"
       },
-      "image_columns": {
+      "shop_the_look": {
         "heading": "Nossa história",
         "text": "Use este texto para compartilhar informações sobre sua marca com seus clientes. Descreva um produto, compartilhe anúncios ou dê as boas-vindas aos clientes em sua loja.",
         "button_text": "Compre agora"
@@ -423,33 +435,47 @@
       "sale_price": "Preço de Promoção",
       "regular_price": "Preço Habitual",
       "description": "descrição",
-      "quick_view": "Visualização Rápida",
       "view_all_details": "Ver todos os detalhes",
-      "add_to_cart": "Adicionar ao Carrinho",
       "reviews": "Avaliações",
       "filters": "Filtros",
       "filter_by": "Filtrar por",
-      "filters_empty": "Nenhum filtro disponível",
       "reset": "Redefinir filtros",
-      "close": "Fechar filtros"
+      "close": "Fechar filtros",
+      "products_with_count": {
+        "one": "{{ count }} produto",
+        "other": "{{ count }} produtos"
+      },
+      "see_all": "Ver tudo",
+      "upsell_out_of_stock": "Fora de estoque",
+      "upsell_error_info": "Verifique o identificador do produto e a identificação da variante",
+      "upsell_error_no_product": "Nenhum produto selecionado",
+      "pair_products": "Compre-o com"
     },
     "product": {
-      "sold_out_html": "Esgotado",
-      "on_sale_html": "Promoção",
-      "on_sale_from_html": "Em promoção a partir de {{ price }}",
+      "sold_out": "Esgotado",
+      "sale": "Promoção",
+      "one_time_purchase": "Compra de uma só vez",
       "preorder": "Pedido antecipado",
+      "free": "Gratuito",
       "unavailable": "Indisponível",
       "compare_at": "Comparar em",
       "quantity": "Quantidade",
+      "in_stock": "Item está em estoque",
+      "out_of_stock": "Item está esgotado",
+      "item_unavailable": "Item não está disponível",
+      "remaining_html": "Apenas {{ inventory }} em estoque",
       "add_to_cart": "Adicionar ao Carrinho",
-      "buy_it_now": "Comprar agora",
-      "sold_out": "Esgotado",
       "on_sale": "Promoção",
-      "view_item": "Visualizar Item",
+      "save_badge_html": "Economize {{ discount }}",
+      "save_badge_up_to_html": "Economize até {{ discount }}",
       "view_product": "Ver produto",
       "checkout": "Finalizar",
       "view_in_space": "Ver no seu espaço",
-      "view_in_space_label": "Ver no seu espaço carregará o item em uma janela de tamanho maior"
+      "view_in_space_label": "Ver no seu espaço carregará o item em uma janela de tamanho maior",
+      "subscription": "Inscrição",
+      "save": "Salve",
+      "unit_price_label": "Preço unitário",
+      "popup_missing": "Nenhuma página adicionada a partir das opções de bloco"
     }
   },
   "gift_cards": {
@@ -489,5 +515,10 @@
       "kilometers": "km",
       "miles": "mi"
     }
+  },
+  "slideshow": {
+    "previous": "Anterior",
+    "next": "Próximo",
+    "scroll_down": "Rolar para baixo"
   }
 }
