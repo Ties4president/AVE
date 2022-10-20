@@ -11,18 +11,6 @@
   {% render 'rating', reviews: product.metafields.reviews, show_rating_count: block.settings.show_rating_count, onboarding: false %}
 {%- endcomment -%}
 
-{%- capture icon_star_empty -%}
-  <svg width="25px" height="25px" viewBox="0 0 25 25" class="icon icon-star icon-star--empty">
-    <polygon fill-rule="nonzero" points="16.2212909 8.77064179 12.5128412 0.870224269 8.80343056 8.77064179 0.512841234 10.0374085 6.51243703 16.1862739 5.09643337 24.8702243 12.5128412 20.7696377 19.9292491 24.8702243 18.5122845 16.1862739 24.5128412 10.0374085"></polygon>
-</svg>
-{%- endcapture -%}
-
-{%- capture icon_star_full -%}
-  <svg width="25px" height="25px" viewBox="0 0 25 25" class="icon icon-star icon-star--full">
-    <polygon fill-rule="nonzero" points="16.2212909 8.77064179 12.5128412 0.870224269 8.80343056 8.77064179 0.512841234 10.0374085 6.51243703 16.1862739 5.09643337 24.8702243 12.5128412 20.7696377 19.9292491 24.8702243 18.5122845 16.1862739 24.5128412 10.0374085"></polygon>
-</svg>
-{%- endcapture -%}
-
 {%- liquid
   assign show_rating = false
   if reviews.rating.value != blank
@@ -53,20 +41,20 @@
 {%- if show_rating -%}
   <div class="product__rating" role="img" title="{{ rating_label }}" aria-label="{{ rating_label }}">
     {%- if single_star -%}
-      <span class="product__rating__star" aria-hidden="true">
-        <span class="product__rating__star__full">{{ icon_star_full }}</span>
+      <span class="rating__star" aria-hidden="true">
+        <span class="rating__star__full"><svg width="25px" height="25px" viewBox="0 0 25 25" class="icon icon-star icon-star--full"><polygon fill-rule="nonzero" points="16.2212909 8.77064179 12.5128412 0.870224269 8.80343056 8.77064179 0.512841234 10.0374085 6.51243703 16.1862739 5.09643337 24.8702243 12.5128412 20.7696377 19.9292491 24.8702243 18.5122845 16.1862739 24.5128412 10.0374085"></polygon></svg></span>
       </span>
       <span class="product__rating__value">{{ reviews_rating | round: 1 }}</span>
     {%- else -%}
-      <span class="product__rating__star" aria-hidden="true" style="--percent: {{ 100 | minus: percent }}%">
-        <span class="product__rating__star__empty">
+      <span class="rating__star" aria-hidden="true" style="--percent: {{ 100 | minus: percent }}%">
+        <span class="rating__star__empty">
           {%- for i in (1..5) -%}
-            {{- icon_star_empty -}}
+            <svg width="25px" height="25px" viewBox="0 0 25 25" class="icon icon-star icon-star--empty"><polygon fill-rule="nonzero" points="16.2212909 8.77064179 12.5128412 0.870224269 8.80343056 8.77064179 0.512841234 10.0374085 6.51243703 16.1862739 5.09643337 24.8702243 12.5128412 20.7696377 19.9292491 24.8702243 18.5122845 16.1862739 24.5128412 10.0374085"></polygon></svg>
           {%- endfor -%}
         </span>
-        <span class="product__rating__star__full">
+        <span class="rating__star__full">
           {%- for i in (1..5) -%}
-            {{- icon_star_full -}}
+            <svg width="25px" height="25px" viewBox="0 0 25 25" class="icon icon-star icon-star--full"><polygon fill-rule="nonzero" points="16.2212909 8.77064179 12.5128412 0.870224269 8.80343056 8.77064179 0.512841234 10.0374085 6.51243703 16.1862739 5.09643337 24.8702243 12.5128412 20.7696377 19.9292491 24.8702243 18.5122845 16.1862739 24.5128412 10.0374085"></polygon></svg>
           {%- endfor -%}
         </span>
       </span>
