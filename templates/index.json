@@ -1,20 +1,45 @@
 {
   "sections": {
-    "slideshow": {
+    "slideshow-0": {
       "type": "section-slideshow",
       "blocks": {
-        "slideshow-0": {
+        "c720a587-e6cb-450d-8782-15e4b0eeb058": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dog_Bowl_Skin_Coat2_ad25bfa6-386c-4eee-a079-6bb8994c9a3c.jpg",
+            "image": "shopify:\/\/shop_images\/BANNER_04.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-27_at_2.58.21_PM.jpg",
             "bg_position": "center-center",
-            "overlay_opacity": 25,
+            "overlay_opacity": 10,
+            "text_width": "normal",
+            "text_position": "bottom-left",
             "text_color": "text-light",
-            "title": "Original Super Food Powdered Supplements",
-            "slide_subheading": "These natural powder supplements are veterinarian formulated with whole food nutrition and key vitamins and minerals that can be missing from even the best commercial pet foods.  Help your pet go from good to best with one spoonful a day.",
-            "slide_btn_text": "Shop Original Powders",
-            "slide_btn_link": "shopify:\/\/collections\/original-powders",
-            "slide_btn_style": "primary",
+            "title": "",
+            "text": "Discover new shearlings, modern tailoring and textured leather separates, this is fall 2022.",
+            "slide_btn_text": "Discover here",
+            "slide_btn_link": "shopify:\/\/collections\/all",
+            "slide_btn_style": "secondary btn--small",
+            "slide_btn_text_2": "",
+            "slide_btn_link_2": "",
+            "slide_btn_style_2": "secondary",
+            "video_btn_text": "",
+            "video_btn_link": ""
+          }
+        },
+        "slideshow-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_width": "normal",
+            "text_position": "bottom-left",
+            "text_color": "text-light",
+            "title": "Leather tone on tone sets",
+            "text": "A permanent collection of timeless yet modern pieces.",
+            "slide_btn_text": "Discover here",
+            "slide_btn_link": "shopify:\/\/collections\/new-arrivals",
+            "slide_btn_style": "secondary btn--small",
             "slide_btn_text_2": "",
             "slide_btn_link_2": "",
             "slide_btn_style_2": "secondary",
@@ -24,16 +49,19 @@
         },
         "slideshow-1": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Dog_and_cat_with_products_5-20-21_1500.jpg",
+            "image": "shopify:\/\/shop_images\/sddfs.jpg",
             "bg_position": "center-center",
-            "overlay_opacity": 20,
+            "overlay_opacity": 10,
+            "text_width": "narrow",
+            "text_position": "right",
             "text_color": "text-light",
-            "title": "Welcome to The Missing Link!",
-            "slide_subheading": "For almost 30 years, The Missing Link® has been creating wholesome, natural, easy-to-add nutritional supplements to empower your pet’s food and enhance their wellbeing.  We’re here to help you find the very best nutritional solutions for your pet’s health and happiness.",
-            "slide_btn_text": "Shop",
+            "title": "FALL 22",
+            "text": "Discover uplifting hues, modern tailoring and second-skin silhouettes, this is fall 2022.",
+            "slide_btn_text": "Discover here",
             "slide_btn_link": "shopify:\/\/collections\/all",
-            "slide_btn_style": "primary",
+            "slide_btn_style": "secondary btn--small",
             "slide_btn_text_2": "",
             "slide_btn_link_2": "",
             "slide_btn_style_2": "secondary",
@@ -41,209 +69,252 @@
             "video_btn_link": ""
           }
         },
-        "f39f9227-2506-4b03-a0df-7b750f42a6e6": {
+        "slideshow-2": {
           "type": "image",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_V2_1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/smartmouth_mobile.jpg",
+            "image": "shopify:\/\/shop_images\/BANNER_07.jpg",
             "bg_position": "center-center",
-            "overlay_opacity": 15,
+            "overlay_opacity": 10,
+            "text_width": "normal",
+            "text_position": "center",
             "text_color": "text-light",
-            "title": "",
-            "slide_subheading": "",
-            "slide_btn_text": "Shop Dental Chews",
-            "slide_btn_link": "shopify:\/\/collections\/dental-chews",
-            "slide_btn_style": "primary",
+            "title": "The essential collection",
+            "text": "Discover new leather separates in our core collection.",
+            "slide_btn_text": "Shop All",
+            "slide_btn_link": "shopify:\/\/collections\/all",
+            "slide_btn_style": "primary btn--small",
             "slide_btn_text_2": "",
             "slide_btn_link_2": "",
             "slide_btn_style_2": "secondary",
-            "video_btn_text": "Video",
-            "video_btn_link": "https:\/\/www.youtube.com\/watch?v=FToCCwCQqR8"
-          }
-        },
-        "9c1ffd0d-3931-4f07-8d13-6c0dce3a7883": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Collagen_Care_Soft_Chews-2_bab37d40-2258-44ef-9e40-1b7e157ae62e.jpg",
-            "bg_position": "center-center",
-            "overlay_opacity": 30,
-            "text_color": "text-light",
-            "title": "NEW! Collagen Care soft chews",
-            "slide_subheading": "Dogs naturally lose their ability to build collagen over time, which can affect their overall health.  Check out our line of Collagen soft chews that may be just what your dog's body is craving.",
-            "slide_btn_text": "Shop Soft Chews",
-            "slide_btn_link": "shopify:\/\/collections\/soft-chews",
-            "slide_btn_style": "primary",
-            "slide_btn_text_2": "",
-            "slide_btn_link_2": "",
-            "slide_btn_style_2": "secondary",
-            "video_btn_text": "Video",
-            "video_btn_link": "https:\/\/youtu.be\/FIgOnbhe3Zg"
+            "video_btn_text": "",
+            "video_btn_link": ""
           }
         }
       },
       "block_order": [
+        "c720a587-e6cb-450d-8782-15e4b0eeb058",
         "slideshow-0",
         "slideshow-1",
-        "f39f9227-2506-4b03-a0df-7b750f42a6e6",
-        "9c1ffd0d-3931-4f07-8d13-6c0dce3a7883"
+        "slideshow-2"
       ],
       "settings": {
-        "slide_height": "one-hundred-height-hero",
-        "content_alignment": "bottom-left",
+        "slide_height": "full-height",
         "show_nav_dots": true,
         "show_nav_arrows": true,
         "show_arrow_down": false,
         "autoplay": false,
         "duration": 4,
-        "transition": "slide"
+        "transition": "slide",
+        "enable_zoom_animation": true,
+        "heading_size": 120
       }
     },
-    "featured-collection": {
-      "type": "section-collection",
-      "settings": {
-        "collection": "our-products",
-        "products_rows": 6,
-        "products_layout": "grid",
-        "show_title": true,
-        "show_collection_button": false,
-        "button_style": "primary",
-        "bg_color": "#ffffff",
-        "enable_slider": true
-      }
-    },
-    "product-feature": {
-      "type": "section-product-feature",
-      "settings": {
-        "image_layout": "square",
-        "image_position": "inline",
-        "text_position": "right",
-        "text_alignment": "left",
-        "image_1": "shopify:\/\/shop_images\/Smartmouth_family_37fcb24f-a752-423d-abe5-20f5ba70bfba.png",
-        "image_link_1": "shopify:\/\/collections\/dental-chews",
-        "image_link_2": "",
-        "hide_image_2": false,
-        "heading": "Spotlight Product- Smartmouth™ Dental Chews",
-        "description": "<p>Multifunctional, textured hard chews that reduce plaque and tartar, freshen breath, deliver daily vitamins, and enhance overall health and well-being. Why give your dogs regular dental chews when you can give them more?<\/p><p><\/p>",
-        "button_text": "Shop Dental Health",
-        "button_link": "shopify:\/\/collections\/dental-chews",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "165056461999e0a4ee": {
-      "type": "section-testimonials",
+    "tab-collections": {
+      "type": "section-tab-collections",
       "blocks": {
-        "16505646190501a81d-0": {
-          "type": "testimonial",
+        "tab-2": {
+          "type": "collection",
           "settings": {
-            "testimonial_text": "<p>Latte, my 3-legged, 115 lb., 2-year old Rottweiler has been on The Missing Link® Ultimate Canine Hip & Joint Formula for about 4 or 5 months now and WOW can we notice a difference!<\/p>",
-            "image_width": 100,
-            "customer_name": "Kari G."
+            "title": "Wool Coats",
+            "tab_collection": "sale",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
           }
         },
-        "16505646190501a81d-1": {
-          "type": "testimonial",
+        "tab-0": {
+          "type": "collection",
           "settings": {
-            "testimonial_text": "<p>My four-year-old Jack Russell terrier, Jasper, had easily lost 80% of his ability to use his front limbs. A friend recommended The Missing Link®. After five weeks he has made the most incredible recovery. Once again, he is exhibiting the traits of a Jack Russell terrier, non-stop energy. There is no doubt in my mind that The Missing Link® has been instrumental in helping my dog.<\/p>",
-            "image_width": 100,
-            "customer_name": "Robert H."
+            "title": "Stretch Trousers",
+            "tab_collection": "leren-broeken",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
           }
         },
-        "16505646190501a81d-2": {
-          "type": "testimonial",
+        "tab-1": {
+          "type": "collection",
           "settings": {
-            "testimonial_text": "<p>Leo is a German spitz mix. I tried all kinds of things to make his hair grow but nothing would work. It seemed to get worse! So my Vet told me to try The Missing Link® and I did. 3 months after using the product I noticed his hair stopped falling out, he started getting his dark color back, it was getting thick, and the best part it was extremely soft! It has also started to grow back. I finally found something that worked! I absolutely love it and so does Leo!<\/p>",
-            "image_width": 100,
-            "customer_name": "Leo"
+            "title": "Jackets",
+            "tab_collection": "leren-jas",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
           }
         }
       },
       "block_order": [
-        "16505646190501a81d-0",
-        "16505646190501a81d-1",
-        "16505646190501a81d-2"
+        "tab-2",
+        "tab-0",
+        "tab-1"
       ],
       "settings": {
-        "title": "Reviews",
-        "show_quotes": true,
+        "wrapper": "full",
+        "title": "Shop New Arrivals",
         "bg_color": ""
       }
     },
-    "1650564623318d2f5a": {
-      "type": "section-product-feature",
+    "1657038319cfb30181": {
+      "type": "section-overlapping-images",
+      "disabled": true,
       "settings": {
-        "image_layout": "square",
-        "image_position": "inline",
         "text_position": "right",
-        "text_alignment": "center",
-        "image_1": "shopify:\/\/shop_images\/Image_5.jpg",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 30,
+        "image_1": "shopify:\/\/shop_images\/Maral-Arden-ARMA-metalmagazine.jpg",
+        "image_1_position": "center-center",
         "image_link_1": "",
+        "image_2_position": "center-center",
         "image_link_2": "",
         "hide_image_2": false,
-        "heading": "USE IT, LOVE IT.  OR YOUR MONEY BACK.  GUARANTEED",
-        "description": "<p>We stand by our products and if you’re unsatisfied for any reason, you can return the product for a full refund. No questions asked.<\/p>",
-        "button_text": "CONTACT US",
-        "button_link": "shopify:\/\/pages\/contact-us",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "1650564737fb8e8ec9": {
-      "type": "section-product-feature",
-      "settings": {
-        "image_layout": "square",
-        "image_position": "inline",
-        "text_position": "left",
-        "text_alignment": "center",
-        "image_1": "shopify:\/\/shop_images\/WhyAbsorbine_abdotcom.png",
-        "image_link_1": "shopify:\/\/pages\/about-us",
-        "image_link_2": "",
-        "hide_image_2": false,
-        "heading": "Our Story",
-        "description": "<p>In the early 1990’s our founder and Veterinarian, Dr. Collette, was concerned by recurring health issues in his clients. Pets were coming in with stiff hips and joints, skin, coat and digestion issues and an overall lack of energy. He recognized that commercially processed kibble was not providing the nutrition needed for pets to thrive and thus created The Missing Link superfood supplements.<\/p><p>Since then food has come a long way, but the need for additional support is still very much needed. In honor of our founder, we continue to pioneer fresh, high-quality and effective solutions for a range of health needs your pet may have.<\/p>",
-        "button_text": "Read More",
-        "button_link": "shopify:\/\/pages\/about-us",
-        "button_style": "primary",
-        "video_url": "",
-        "bg_color": ""
-      }
-    },
-    "16505656548511a844": {
-      "type": "section-rich-text",
-      "settings": {
-        "text_position": "center",
-        "top_image_width": 100,
-        "subheading": "",
         "heading": "",
-        "text": "",
-        "button_text": "Shop Now",
-        "button_url": "shopify:\/\/collections\/all",
-        "button_style": "primary",
-        "secondary_button_text": "",
-        "secondary_button_url": "",
-        "secondary_button_style": "secondary",
+        "description": "<p>A R M A  was collectively established in 1985.<\/p><p>From our humble beginnings as a leathermaking collective to becoming a global brand, our journey has always been defined by an obsessive focus on craftsmanship and an unmatched expertise with leather.<\/p>",
+        "button_text": "Read more",
+        "button_link": "",
+        "button_style": "secondary btn--small",
+        "video_btn_text": "",
+        "video_btn_url": "",
         "bg_color": ""
       }
     },
-    "1650576661aa77443c": {
-      "type": "section-custom-html",
+    "1657633739ed85dfcf": {
+      "type": "section-grid",
+      "blocks": {
+        "1657633739dbfbc022-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FLYING_COLOURS.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 0,
+            "text_position": "right",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "hide_on_mobile": true,
+            "is_link": true,
+            "image_link": "shopify:\/\/collections\/new-shearlings-menu",
+            "text_color": "text-light"
+          }
+        },
+        "1657633739dbfbc022-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DISCOVER_SHEARLING.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 15,
+            "text_position": "left",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "hide_on_mobile": false,
+            "is_link": true,
+            "image_link": "shopify:\/\/collections\/new-shearlings-menu",
+            "text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "1657633739dbfbc022-0",
+        "1657633739dbfbc022-1"
+      ],
       "settings": {
-        "title": "Instagram feed",
-        "html": "<div class=\"covet-pics-gallery\" data-id=\"137942\"><\/div>",
-        "bg_color": ""
+        "height": "fullscreen",
+        "wrapper": "full",
+        "add_spacing": false,
+        "heading_size": 150,
+        "button_style": "secondary btn--small",
+        "secondary_button_style": "secondary btn--small",
+        "bg_color": "",
+        "enable_slider_mobile": false
+      }
+    },
+    "1657705511b2cb97e3": {
+      "type": "section-grid",
+      "blocks": {
+        "1657705511bc3715b9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PICTURE_ME_BLUE.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "right",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "hide_on_mobile": true,
+            "is_link": true,
+            "image_link": "shopify:\/\/collections\/new-arrivals",
+            "text_color": "text-light"
+          }
+        },
+        "1657705511bc3715b9-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DISCOVER_RICH_LEATHERS.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "left",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_text": "",
+            "link": "",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "hide_on_mobile": false,
+            "is_link": true,
+            "image_link": "shopify:\/\/collections\/new-arrivals",
+            "text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "1657705511bc3715b9-0",
+        "1657705511bc3715b9-1"
+      ],
+      "settings": {
+        "height": "fullscreen",
+        "wrapper": "full",
+        "add_spacing": false,
+        "heading_size": 150,
+        "button_style": "secondary btn--small",
+        "secondary_button_style": "secondary btn--small",
+        "bg_color": "",
+        "enable_slider_mobile": false
       }
     }
   },
   "order": [
-    "slideshow",
-    "featured-collection",
-    "product-feature",
-    "165056461999e0a4ee",
-    "1650564623318d2f5a",
-    "1650564737fb8e8ec9",
-    "16505656548511a844",
-    "1650576661aa77443c"
+    "slideshow-0",
+    "tab-collections",
+    "1657038319cfb30181",
+    "1657633739ed85dfcf",
+    "1657705511b2cb97e3"
   ]
 }
