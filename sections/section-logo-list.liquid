@@ -1,5 +1,10 @@
-{% comment %} Logos List {% endcomment %}
-{%- assign bg_color = section.settings.bg_color -%}
+<!-- /sections/section-logo-list.liquid -->
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign animations_enabled = settings.animations_enabled
+  assign animation_anchor = '#LogoList--' | append: section.id
+  assign animation_delay = 250
+-%}
 
 {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
   {%- style -%}
@@ -11,7 +16,7 @@
 
 <section id="LogoList--{{ section.id }}" class="logo-list" data-section-id="{{ section.id }}" data-section-type="logo-list">
   <div class="logo-list__container">
-    <div class="logo-list__slider" data-slider>
+    <div class="logo-list__slider" data-slider {% if animations_enabled %} data-aos="fade-right" data-aos-anchor="{{ animation_anchor }}" data-aos-delay="{{ animation_delay }}"{% endif %}>
       {%- if section.blocks.size > 0 -%}
         {%- for block in section.blocks -%}
           {%- liquid
@@ -64,7 +69,7 @@
               {%- endif -%}
             </div>
           {%- endif -%}
-        {% endfor %}
+        {%- endfor -%}
       {%- else -%}
         {%- for i in (1..5) -%}
           {%- assign logo_aspect_ratio = image.aspect_ratio | default: 1.333 -%}
@@ -75,7 +80,7 @@
               {{- 'logo' | placeholder_svg_tag: 'placeholder-svg-filled' -}}
             </div>
           </div>
-        {% endfor %}
+        {%- endfor -%}
       {%- endif -%}
     </div>
   </div>
