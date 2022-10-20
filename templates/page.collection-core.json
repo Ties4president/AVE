@@ -1,0 +1,266 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": false
+      }
+    },
+    "16572785390d760d1b": {
+      "type": "section-split-images",
+      "blocks": {
+        "1657278539e26c0580-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/49_3ed1d478-3976-40f9-9218-8e3749e78e7c.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        },
+        "1657278539e26c0580-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16_1fcd2c9a-895c-4d86-884b-2c0bf48a056e.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "1657278539e26c0580-0",
+        "1657278539e26c0580-1"
+      ],
+      "settings": {
+        "image_height": "full-height",
+        "mobile_layout": "stacked",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "1658927016e8fd8d67": {
+      "type": "section-text",
+      "blocks": {
+        "1658927016d6be55b4-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>CORE COLLECTION<\/p>",
+            "size": 175
+          }
+        },
+        "1658927016d6be55b4-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A playful gathering of the traditional 1970’s. Characterized by “gentle’’ notions of vintage and retro silhouettes. Embracing a British preppy yet conservative look, the foundation is an autumnal colour palette of gentle beige, honeycomb tones and cool truffle shades alongside incredibly tactile shearlings and cashmere fabrics in undefined colours like synthetic green, iconic pink and denim blues.<br\/><br\/>Our Core collection gives you the tools to build a strong foudation for your wardrobe. Made in timeless colours, longlasting fabrics and contemporary silhouettes, each piece can be mixed and matched with the rest of your closet every season for endless wears.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "1658927016d6be55b4-0",
+        "1658927016d6be55b4-2"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "1657277653b1c367db": {
+      "type": "section-custom-content",
+      "blocks": {
+        "5fb79c8f-897f-4d21-bee8-1f9ad922f2c1": {
+          "type": "text",
+          "settings": {
+            "text_position": "center",
+            "top_image_width": 100,
+            "text_color": "text-dark",
+            "subheading": "",
+            "title": "YOU'RE EXCLUSIVE TOO",
+            "text": "",
+            "button_text": "Discover more",
+            "button_link": "shopify:\/\/collections\/new-shearlings-menu",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        },
+        "1657277653d36799de-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/37.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "5fb79c8f-897f-4d21-bee8-1f9ad922f2c1",
+        "1657277653d36799de-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "16572786443822a5fa": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657278644d80c634a-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/01.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "secondary btn--small"
+          }
+        },
+        "e7d7f084-ff9b-4d74-80ae-7f9d67c4ce3e": {
+          "type": "product",
+          "settings": {
+            "title": "Shop the look",
+            "product": "patty-cropped-leather-jacket",
+            "text_color": "text-dark",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657278644d80c634a-0",
+        "e7d7f084-ff9b-4d74-80ae-7f9d67c4ce3e"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1657279083ff4e35c4": {
+      "type": "section-custom-content",
+      "blocks": {
+        "e9b60bf5-6573-4da0-95c3-767e07ba1261": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/54.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "165727908389878e50-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/53.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "e9b60bf5-6573-4da0-95c3-767e07ba1261",
+        "165727908389878e50-0"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1659534049b442deb3": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "1659534049e538a56c-0": {
+          "type": "collection",
+          "settings": {
+            "title": "MEN",
+            "tab_collection": "shop-men",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        },
+        "1659534049e538a56c-1": {
+          "type": "collection",
+          "settings": {
+            "title": "WOMEN",
+            "tab_collection": "leren-broeken",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "1659534049e538a56c-0",
+        "1659534049e538a56c-1"
+      ],
+      "settings": {
+        "wrapper": "normal",
+        "title": "CORE COLLECTION",
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16572785390d760d1b",
+    "1658927016e8fd8d67",
+    "1657277653b1c367db",
+    "16572786443822a5fa",
+    "1657279083ff4e35c4",
+    "1659534049b442deb3"
+  ]
+}
