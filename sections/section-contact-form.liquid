@@ -104,19 +104,26 @@
 {%- endcapture -%}
 
 <section data-section-type="contact-form" data-section-id="{{ section.id }}">
-  <div class="wrapper wrapper--small">
+  <div class="wrapper wrapper--narrow">
 
     {%- form 'contact', id: 'ContactForm'  -%}
       {%- comment -%}
         Success message
       {%- endcomment -%}
       {%- if form.posted_successfully? -%}
-        <p class="note form-success">
-          {{- 'contact.form.post_success' | t -}}
-        </p>
-
+        <div class="contact-form__message">
+          <div class="wrapper">
+            <p class="note form-success">
+              {{- 'contact.form.post_success' | t -}}
+            </p>
+          </div>
+        </div>
       {%- elsif form.errors -%}
-        {{- form.errors | default_errors -}}
+        <div class="contact-form__message">
+          <div class="wrapper">
+            {{- form.errors | default_errors -}}
+          </div>
+        </div>
       {%- endif -%}
 
       {{- form_fields -}}
