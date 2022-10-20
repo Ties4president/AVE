@@ -1,0 +1,369 @@
+{
+  "sections": {
+    "16572785390d760d1b": {
+      "type": "section-split-images",
+      "blocks": {
+        "1657278539e26c0580-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.35.35.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        },
+        "1657278539e26c0580-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.36.00.png",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "1657278539e26c0580-0",
+        "1657278539e26c0580-1"
+      ],
+      "settings": {
+        "image_height": "full-height",
+        "mobile_layout": "stacked",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "text": {
+      "type": "section-text",
+      "blocks": {
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p><strong>COOL KAPADOKYA<\/strong><\/p>",
+            "size": 170
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the edge of the world, nature is rough, beautiful yet unforgiving, and a sense of nostalgia pervades. This is a land of mystical sunrises, hidden vallees and rocky cliff faces. <br\/><br\/>The idea of multi-functional outerwear is conveyed in a very contemporary sense, with an easeful sophistication. In many ways it is a reflection of how we live now together with a summation of ARMA’s heritage and future.<\/p>",
+            "size": 140
+          }
+        },
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading",
+        "text",
+        "adb6acda-16f5-4af7-b9c8-45cbfca2d3a7"
+      ],
+      "settings": {
+        "text_position": "left",
+        "wrapper": "narrow",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "1657277653b1c367db": {
+      "type": "section-custom-content",
+      "blocks": {
+        "1657277653d36799de-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.39.07.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "fbf2812e-a60f-4d8b-8d80-ba1ce1ecfbb2": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.38.19.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "1657277653d36799de-0",
+        "fbf2812e-a60f-4d8b-8d80-ba1ce1ecfbb2"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1658742956d4799bd6": {
+      "type": "section-look",
+      "blocks": {
+        "16587429564ed5fa9b-0": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.37.41.png",
+            "product": "catlyn-forest-vega",
+            "position_x": 59,
+            "position_y": 28
+          }
+        }
+      },
+      "block_order": [
+        "16587429564ed5fa9b-0"
+      ],
+      "settings": {
+        "section_height": "six-fifty-height",
+        "title": "LIGHT HILLS",
+        "text": "<p>A surreal landscape of carved-out towering rock formations, change color with every sunset.<\/p>",
+        "button_text": "Shop Now",
+        "button_link": "",
+        "button_style": "primary",
+        "text_color": "",
+        "bg_color": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true
+      }
+    },
+    "165874341534d0fe3b": {
+      "type": "section-custom-content",
+      "blocks": {
+        "16587434149cba32b9-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.39.37.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "6178c966-dd54-4893-ae5f-18bb61f6caf2": {
+          "type": "product",
+          "settings": {
+            "title": "",
+            "product": "concita-merinillo-lacon",
+            "text_color": "text-dark",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "16587434149cba32b9-0",
+        "6178c966-dd54-4893-ae5f-18bb61f6caf2"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1658743752b0667e03": {
+      "type": "section-custom-content",
+      "blocks": {
+        "16587437523493b3d8-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.37.18.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "46e6b124-255f-44d8-9eb7-d53062667f58": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.37.25.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "16587437523493b3d8-0",
+        "46e6b124-255f-44d8-9eb7-d53062667f58"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1658743237847e5a32": {
+      "type": "section-look",
+      "blocks": {
+        "1658743236f5ea3d12-0": {
+          "type": "image",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_11.36.18.png",
+            "product": "",
+            "position_x": 50,
+            "position_y": 50
+          }
+        }
+      },
+      "block_order": [
+        "1658743236f5ea3d12-0"
+      ],
+      "settings": {
+        "section_height": "seven-fifty-height",
+        "title": "SET IN STONE",
+        "text": "",
+        "button_text": "Shop Now",
+        "button_link": "",
+        "button_style": "primary",
+        "text_color": "",
+        "bg_color": ""
+      }
+    },
+    "165874411004dd5497": {
+      "type": "section-custom-content",
+      "blocks": {
+        "16587441103104de82-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/Schermafbeelding_2022-07-25_om_12.16.20.png",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "cdf67489-71a0-4e0a-aaf2-0449981d123e": {
+          "type": "product",
+          "settings": {
+            "title": "",
+            "product": "carlotta-leather-pleated-wide-leg-trouser-1",
+            "text_color": "text-dark",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "16587441103104de82-0",
+        "cdf67489-71a0-4e0a-aaf2-0449981d123e"
+      ],
+      "settings": {
+        "height": "six-fifty-height",
+        "add_spacing": false,
+        "wrapper": "normal",
+        "bg_color": ""
+      }
+    },
+    "1658926576cc8a4821": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "1658926576bc1a4dcd-0": {
+          "type": "collection",
+          "settings": {
+            "title": "Men",
+            "tab_collection": "all-men",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        },
+        "1658926576bc1a4dcd-1": {
+          "type": "collection",
+          "settings": {
+            "title": "Women",
+            "tab_collection": "new-shearlings-menu",
+            "show_image": false,
+            "overlay_opacity": 10,
+            "description": "",
+            "text_color": "text-light",
+            "link_text": "View All",
+            "link": "",
+            "button_style": "primary btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "1658926576bc1a4dcd-0",
+        "1658926576bc1a4dcd-1"
+      ],
+      "settings": {
+        "wrapper": "normal",
+        "title": "Cool Kapadokya",
+        "bg_color": ""
+      }
+    }
+  },
+  "order": [
+    "16572785390d760d1b",
+    "text",
+    "1657277653b1c367db",
+    "1658742956d4799bd6",
+    "main",
+    "165874341534d0fe3b",
+    "1658743752b0667e03",
+    "1658743237847e5a32",
+    "165874411004dd5497",
+    "1658926576cc8a4821"
+  ]
+}
