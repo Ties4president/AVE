@@ -6,8 +6,8 @@
         "c720a587-e6cb-450d-8782-15e4b0eeb058": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/296087559_658993809124574_4233968667638181195_n.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/296087559_658993809124574_4233968667638181195_n.jpg",
+            "image": "shopify:\/\/shop_images\/BANNER_04.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/WhatsApp_Image_2022-09-27_at_2.58.21_PM.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_width": "normal",
@@ -16,7 +16,7 @@
             "title": "",
             "text": "Discover new shearlings, modern tailoring and textured leather separates, this is fall 2022.",
             "slide_btn_text": "Discover here",
-            "slide_btn_link": "shopify:\/\/collections",
+            "slide_btn_link": "shopify:\/\/collections\/all",
             "slide_btn_style": "secondary btn--small",
             "slide_btn_text_2": "",
             "slide_btn_link_2": "",
@@ -29,6 +29,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-1.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_width": "normal",
@@ -50,6 +51,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/sddfs.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_width": "narrow",
@@ -71,6 +73,7 @@
           "type": "image",
           "disabled": true,
           "settings": {
+            "image": "shopify:\/\/shop_images\/BANNER_07.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_width": "normal",
@@ -113,8 +116,8 @@
         "tab-2": {
           "type": "collection",
           "settings": {
-            "title": "pants",
-            "tab_collection": "pants",
+            "title": "Wool Coats",
+            "tab_collection": "sale",
             "show_image": false,
             "overlay_opacity": 10,
             "description": "",
@@ -127,8 +130,8 @@
         "tab-0": {
           "type": "collection",
           "settings": {
-            "title": "shirts",
-            "tab_collection": "shirts",
+            "title": "Stretch Trousers",
+            "tab_collection": "leren-broeken",
             "show_image": false,
             "overlay_opacity": 10,
             "description": "",
@@ -141,8 +144,8 @@
         "tab-1": {
           "type": "collection",
           "settings": {
-            "title": "shoes",
-            "tab_collection": "shoes",
+            "title": "Jackets",
+            "tab_collection": "leren-jas",
             "show_image": false,
             "overlay_opacity": 10,
             "description": "",
@@ -172,6 +175,7 @@
         "text_alignment": "left",
         "images_width": 750,
         "images_offset": 30,
+        "image_1": "shopify:\/\/shop_images\/Maral-Arden-ARMA-metalmagazine.jpg",
         "image_1_position": "center-center",
         "image_link_1": "",
         "image_2_position": "center-center",
@@ -193,6 +197,7 @@
         "1657633739dbfbc022-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/FLYING_COLOURS.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 0,
             "text_position": "right",
@@ -212,6 +217,7 @@
         "1657633739dbfbc022-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DISCOVER_SHEARLING.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 15,
             "text_position": "left",
@@ -250,6 +256,7 @@
         "1657705511bc3715b9-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/PICTURE_ME_BLUE.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_position": "right",
@@ -269,6 +276,7 @@
         "1657705511bc3715b9-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/DISCOVER_RICH_LEATHERS.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_position": "left",
