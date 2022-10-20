@@ -7,6 +7,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/296087559_658993809124574_4233968667638181195_n.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/296087559_658993809124574_4233968667638181195_n.jpg",
             "bg_position": "center-center",
             "overlay_opacity": 10,
             "text_width": "normal",
@@ -15,7 +16,7 @@
             "title": "",
             "text": "Discover new shearlings, modern tailoring and textured leather separates, this is fall 2022.",
             "slide_btn_text": "Discover here",
-            "slide_btn_link": "shopify:\/\/collections\/all",
+            "slide_btn_link": "shopify:\/\/collections",
             "slide_btn_style": "secondary btn--small",
             "slide_btn_text_2": "",
             "slide_btn_link_2": "",
