@@ -1,7 +1,12 @@
 {%- liquid
   assign heading = section.settings.product_recommendations_heading
   assign limit = section.settings.limit
+  assign columns = settings.products_per_row_on_desktop
   assign bg_color = section.settings.bg_color
+  assign wrapper_class = 'wrapper'
+  if section.settings.wrapper == 'full'
+    assign wrapper_class = 'wrapper wrapper--full'
+  endif
 -%}
 
 {%- style -%}
@@ -19,31 +24,28 @@
   data-section-id="{{ section.id }}"
   data-product-id="{{ product.id }}"
   data-limit="{{ limit }}"
-  data-show-section="{{ section.settings.show_section }}">
+  data-columns="{{ columns }}">
 
   <div class="related-products" data-related-products>
     {%- if recommendations.performed -%}
       {%- if recommendations.products_count > 0 -%}
-        
+        <div class="{{ wrapper_class }}">
           {%- if heading != blank -%}
             <div class="featured-collection__title">
-              <div class="wrapper">
-                <h2 class="featured-collection__heading section__heading h4">{{ heading }}</h2>
+              <h2 class="featured-collection__heading section__heading h4">{{ heading }}</h2>
 
-                {%- if settings.show_spacer_lines -%}
-                  <hr>
-                {%- endif -%}
-              </div>
+              {%- if settings.show_spacer_lines -%}
+                <hr>
+              {%- endif -%}
             </div>
           {%- endif -%}
 
-          <div class="wrapper">
-            <div class="carousel__container">
-              <div class="carousel" data-collection-slider>
-                {%- for product in recommendations.products -%}
-                  {%- render 'product-grid-item', product: product, carousel: true -%}
-                {%- endfor -%}
-              </div>
+          <div class="carousel__container">
+            <div class="carousel carousel--inactive carousel--mobile" data-slider data-slider-id="slider--{{ section.id }}">
+              {%- for product in recommendations.products -%}
+                {%- assign animation_delay = forloop.index0 -%}
+                {%- render 'product-grid-item', product: product, carousel: true, animation_delay: animation_delay -%}
+              {%- endfor -%}
             </div>
           </div>
         </div>
@@ -60,11 +62,18 @@
   "name": "Product recommendations",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "show_section",
-      "label": "Show related products",
-      "info": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)",
-      "default": true
+      "type": "paragraph",
+			"content": "Dynamic recommendations change and improve with time. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+    },
+    {
+      "type": "select",
+      "id": "wrapper",
+      "label": "Width",
+      "default": "normal",
+      "options": [
+        { "value": "normal", "label": "Normal" },
+        { "value": "full", "label": "Wide" }
+      ]
     },
     {
 			"type":    "range",
