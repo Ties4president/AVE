@@ -1,5 +1,12 @@
 {%- comment -%} /sections/product-template {%- endcomment -%}
-{%- assign bg_color = section.settings.bg_color -%}
+{%- liquid
+  assign bg_color = section.settings.bg_color
+  assign wrapper = section.settings.wrapper
+  assign wrapper_class = 'wrapper'
+  if wrapper != 'normal'
+    assign wrapper_class = wrapper_class | append: ' wrapper--' | append: wrapper
+  endif
+-%}
 
 {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
   {%- style -%}
@@ -10,9 +17,10 @@
 
 <section id="ProductTemplate--{{ section.id }}"
   class="product-single"
+  data-enable-history-state="true"
   data-section-type="product-template"
   data-section-id="{{ section.id }}">
-  <div class="wrapper">
+  <div class="{{ wrapper_class }}">
     {%- render 'product' section: section, unique: section.id -%}
   </div>
 </section>
@@ -78,28 +86,44 @@
     },
     {
       "type": "select",
-      "id": "image_gallery",
-      "label": "Image gallery",
+      "id": "wrapper",
+      "label": "Width",
+      "default": "normal",
+      "options": [
+        { "label": "Normal" , "value": "normal" },
+        { "label": "Wide", "value": "full" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Image size",
       "options": [
         {
-          "value": "none",
-          "label": "None"
+          "value": "small",
+          "label": "Small"
         },
         {
-          "value": "zoom",
-          "label": "Hover to zoom"
+          "value": "medium",
+          "label": "Medium"
         },
         {
-          "value": "lightbox",
-          "label": "Lightbox"
+          "value": "large",
+          "label": "Large"
         }
       ],
-      "default": "zoom"
+      "default": "medium"
     },
     {
       "type": "header",
       "content": "Media",
       "info": "Learn more about [media types](https://help.shopify.com/manual/products/product-media)"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_zoom",
+      "label": "Enable zoom",
+      "default": true
     },
     {
       "type": "checkbox",
@@ -130,7 +154,7 @@
           "type": "select",
           "id": "subheading",
           "label": "Navigation",
-          "default": "breadcrumbs",
+          "default": "none",
           "options": [
             { "value": "none", "label": "None" },
             { "value": "breadcrumbs", "label": "Breadcrumbs" },
@@ -164,109 +188,192 @@
       "settings": [
         {
           "type": "header",
+          "content": "Size chart"
+        },
+        {
+          "type": "page",
+          "id": "info_page",
+          "label": "Page"
+        },
+        {
+          "type": "text",
+          "id": "info_page_title_override",
+          "label": "Page title override"
+        },
+        {
+          "type": "header",
           "content": "Form elements"
         },
         {
           "type": "checkbox",
+          "id": "show_labels",
+          "label": "Show variant labels",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_quantity",
+          "label": "Show quantity selector",
+          "default": false
+        },
+        {
+          "type": "checkbox",
           "id": "show_payment_button",
-          "label": "Show dynamic checkout button",
-          "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "label": "Show dynamic checkout buttons",
+          "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/en/manual/online-store/os/dynamic-checkout)",
           "default": true
         },
         {
           "type": "header",
           "content": "Subscriptions",
           "info": "Learn more about [subscriptions](https://help.shopify.com/en/manual/products/subscriptions)"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_subscriptions_selectors",
+          "label": "Enable subscription selectors",
+          "info": "Shown on products with subscription options",
+          "default": true
         }
       ]
     },
     {
       "name": "Product description",
       "type": "description",
+      "settings": []
+    },
+    {
+      "name": "Accordions",
+      "type": "product_accordions",
       "settings": [
         {
-          "type": "header",
-          "content": "Tabs"
-        },
-        {
-          "type": "paragraph",
-          "content": "You have the option to enable three extra tabs for more information on your product."
-        },
-        {
-          "type": "select",
-          "id": "tabs_style",
-          "label": "Tabs style",
-          "default": "accordions",
-          "options": [
-            { "label": "Accordions", "value": "accordions" },
-            { "label": "Disable tabs", "value": "tabs_disabled" }
-          ]
-        },
-        {
           "type": "text",
-          "id": "tab_title_1",
-          "label": "Tab heading",
-          "default": "Tab"
+          "id": "accordion_heading_1",
+          "label": "Accordion heading 1",
+          "default": "Materials and specs"
         },
         {
           "type": "richtext",
-          "id": "tab_content_1",
-          "label": "Tab text",
-          "default": "<p>This content type will accept <strong>rich text</strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.</p>"
+          "id": "accordion_text_1",
+          "label": "Accordion text 1",
+            "default": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>"
+        },
+        {
+          "type": "page",
+          "id": "accordion_page_1",
+          "label": "Accordion page 1",
+          "info": "Example: Size chart"
         },
         {
           "type": "text",
-          "id": "tab_title_2",
-          "label": "Tab heading",
-          "default": "Info"
+          "id": "accordion_heading_2",
+          "label": "Accordion heading 2",
+          "default": "Shipping and returns"
         },
         {
           "type": "richtext",
-          "id": "tab_content_2",
-          "label": "Tab text",
-          "default": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.</p>"
+          "id": "accordion_text_2",
+          "label": "Accordion text 2",
+            "default": "<p>Use this accordion to add info such as Materials, Sizing, Features, Shipping and Returns policies</p>"
+        },
+        {
+          "type": "page",
+          "id": "accordion_page_2",
+          "label": "Accordion page 2"
         },
         {
           "type": "text",
-          "id": "tab_title_3",
-          "label": "Tab heading"
+          "id": "accordion_heading_3",
+          "label": "Accordion heading 3"
         },
         {
           "type": "richtext",
-          "id": "tab_content_3",
-          "label": "Tab text"
+          "id": "accordion_text_3",
+          "label": "Accordion text 3"
+        },
+        {
+          "type": "page",
+          "id": "accordion_page_3",
+          "label": "Accordion page 3"
         },
         {
           "type": "text",
-          "id": "tab_title_4",
-          "label": "Tab heading"
+          "id": "accordion_heading_4",
+          "label": "Accordion heading 4"
         },
         {
           "type": "richtext",
-          "id": "tab_content_4",
-          "label": "Tab text"
+          "id": "accordion_text_4",
+          "label": "Accordion text 4"
+        },
+        {
+          "type": "page",
+          "id": "accordion_page_4",
+          "label": "Accordion page 4"
         },
         {
           "type": "text",
-          "id": "tab_title_5",
-          "label": "Tab heading"
+          "id": "accordion_heading_5",
+          "label": "Accordion heading 5"
         },
         {
           "type": "richtext",
-          "id": "tab_content_5",
-          "label": "Tab text"
+          "id": "accordion_text_5",
+          "label": "Accordion text 5"
+        },
+        {
+          "type": "page",
+          "id": "accordion_page_5",
+          "label": "Accordion page 5"
         }
       ],
       "limit": 1
     },
     {
-      "name": "Social sharing",
-      "type": "social-sharing",
-      "limit": 1
+      "type": "upsell",
+      "name": "Upsell",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "paragraph",
+          "content": "Upsell is best as a one-click add to cart, so upsell products should have no variants. [Learn more](https://groupthought.com/link/pipeline/docs/upsell/variant)"
+        },
+        {
+          "type": "header",
+          "content": "Upsell in cart"
+        },
+        {
+          "type": "paragraph",
+          "content": "Use a dynamic source with the metafield Namespace and key 'theme.upsell' to allow product upsells to follow users into the cart. Use any other name to limit this feature to the product page. [Learn more](https://groupthought.com/link/pipeline/docs/upsell/cart)"
+        }
+      ]
+    },
+    {
+      "name": "Share button",
+      "type": "share-button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Share",
+          "info": "If you include a link in social media posts, the page\’s featured image will be shown as the preview image.[Learn more](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)"
+        },
+        {
+          "type": "paragraph",
+          "content": "A store title and description are included with the preview image.[Learn more](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
+        }
+      ]
     },
     {
       "name": "Pickup availability",
-      "type": "pickup-availability",
+      "type": "pickup",
       "limit": 1,
       "settings": [
         {
@@ -284,6 +391,179 @@
           "id": "custom_liquid",
           "label": "Custom liquid",
           "info": "Add app snippets or other Liquid code to create advanced customizations."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Text",
+          "default": "<p>Give more details about the product</p>"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "default": "left",
+          "options": [
+            { "label": "Center", "value": "center" },
+            { "label": "Left", "value": "left" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon_name",
+          "label": "Select an icon",
+          "default": "check",
+          "options": [
+            { "value": "alert-circle", "label": "Alert" },
+            { "value": "archive", "label": "Archive" },
+            { "value": "arrow-up-circle", "label": "Arrow" },
+            { "value": "arrow-up-right", "label": "Arrow right" },
+            { "value": "at-sign", "label": "At sign" },
+            { "value": "award", "label": "Award" },
+            { "value": "bell", "label": "Bell" },
+            { "value": "bookmark", "label": "Bookmark" },
+            { "value": "calendar", "label": "Calendar" },
+            { "value": "camera", "label": "Camera" },
+            { "value": "check", "label": "Check" },
+            { "value": "clipboard", "label": "Clipboard" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "compass", "label": "Compass" },
+            { "value": "credit-card", "label": "Credit card" },
+            { "value": "dollar-sign", "label": "Dollar sign" },
+            { "value": "download", "label": "Download" },
+            { "value": "edit-2", "label": "Pencil" },
+            { "value": "flag", "label": "Flag" },
+            { "value": "heart", "label": "Heart" },
+            { "value": "help-circle", "label": "Question mark" },
+            { "value": "info", "label": "Info" },
+            { "value": "mail", "label": "Mail" },
+            { "value": "map-pin", "label": "Map" },
+            { "value": "message-circle", "label": "Message" },
+            { "value": "music", "label": "Music" },
+            { "value": "paperclip", "label": "Paperclip" },
+            { "value": "phone", "label": "Phone" },
+            { "value": "plus", "label": "Plus" },
+            { "value": "refresh-cw", "label": "Recycle" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "smile", "label": "Smile" },
+            { "value": "star", "label": "Star" },
+            { "value": "thumbs-up", "label": "Thumbs up" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "zap", "label": "Lightening" },
+            { "value": "none", "label": "None"}
+          ]
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "Color"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Image",
+          "info": "If set overrides the icon above"
+        },
+        {
+          "type": "range",
+          "id": "icon_width",
+          "label": "Width",
+          "min": 20,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "default": 20
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+        {
+          "type": "text",
+          "id": "icon_text",
+          "label": "Heading",
+          "default": "Free shipping over $99"
+        },
+        {
+          "type": "range",
+          "id": "text_size",
+          "label": "Size",
+          "default": 90,
+          "min": 50,
+          "max": 125,
+          "step": 5,
+          "unit": "%"
+        },
+        {
+          "type": "header",
+          "content": "Layout"
+        },
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "full",
+          "options": [
+            { "label": "Wide", "value": "full" },
+            { "label": "Half", "value": "half" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Alignment",
+          "default": "left",
+          "options": [
+            { "label": "Center", "value": "center" },
+            { "label": "Left", "value": "left" }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "checkbox",
+          "id": "remove_padding",
+          "label": "Remove padding",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "inventory_countdown",
+      "name": "Inventory countdown",
+      "limit": 1,
+      "settings": []
+    },
+    {
+      "type": "popup_text",
+      "name": "Popup text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Read more"
+        },
+        {
+          "type": "page",
+          "id": "popup_page",
+          "label": "Page"
         }
       ]
     }
