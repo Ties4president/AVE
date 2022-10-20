@@ -2,23 +2,24 @@
   "sections": {
     "hero": {
       "type": "collection-image-with-title",
+      "disabled": true,
       "settings": {
-        "show_image": true,
-        "banner_height": "normal",
-        "text_position": "center",
+        "banner_height": "four-fifty-height",
+        "text_position": "middle-center",
+        "show_image": false,
         "text_color": "text-light",
-        "overlay_opacity": 20,
+        "overlay_opacity": 10,
         "banner_bg_color": "#fafafa"
       }
     },
     "subcollections": {
       "type": "subcollections",
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "image_source": "collection",
         "image_aspect_ratio": 0.6,
-        "image_overlay_opacity": 0,
-        "image_overlay_color": "#000",
+        "image_overlay_opacity": 10,
         "bg_color": "",
         "text_color": "text-light"
       }
@@ -26,10 +27,10 @@
     "main": {
       "type": "collection",
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "enable_sorting": true,
         "enable_filters": true,
-        "filter_mode": "tag",
+        "filter_mode": "default",
         "bg_color": ""
       }
     }
