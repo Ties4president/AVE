@@ -6,101 +6,137 @@
         "title": {
           "type": "title",
           "settings": {
-            "subheading": "breadcrumbs",
-            "show_rating": true,
+            "subheading": "none",
+            "show_rating": false,
             "show_rating_count": false
-          }
-        },
-        "form": {
-          "type": "form",
-          "settings": {
-            "show_payment_button": false
           }
         },
         "description": {
           "type": "description",
           "settings": {
-            "tabs_style": "tabs_disabled",
-            "tab_title_1": "Tab",
-            "tab_content_1": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
-            "tab_title_2": "Info",
-            "tab_content_2": "<p>You can use product metafields to assign content to this tab that is unique to an individual product.  Use tabs to highlight unique features, sizing information, or other sales information.<\/p>",
-            "tab_title_3": "",
-            "tab_content_3": "",
-            "tab_title_4": "",
-            "tab_content_4": "",
-            "tab_title_5": "",
-            "tab_content_5": ""
           }
         },
-        "social-sharing": {
-          "type": "social-sharing",
-          "settings": {}
+        "inventory_countdown": {
+          "type": "inventory_countdown",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "info_page": "",
+            "info_page_title_override": "",
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true
+          }
+        },
+        "icon": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon_name": "check",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "center",
+            "bg_color": "#ffffff",
+            "remove_padding": true
+          }
+        },
+        "product_accordions": {
+          "type": "product_accordions",
+          "settings": {
+            "accordion_heading_1": "Description",
+            "accordion_text_1": "<p>Fits true to size, take your normal size.<\/p><p>Intended to be slightly loose fitted.<\/p><p>Made from wool.<\/p><p>Model is 1.76 cm and wears size 36.<\/p><p>CBL is 99cm.<\/p>",
+            "accordion_page_1": "",
+            "accordion_heading_2": "Composition",
+            "accordion_text_2": "<p>body\/exterior: 100% Wool<\/p><p>unlined<\/p>",
+            "accordion_page_2": "",
+            "accordion_heading_3": "Shipping and returns",
+            "accordion_text_3": "<p>Standard shipping delivery in 3-5 working days.<\/p><p>For more shipping information please see our <a href=\"https:\/\/armastore.com\/customer-care\/\" target=\"_blank\"><strong>shipping and returns information<\/strong><\/a><\/p><p>We offer returns for up to 14 days from delivery free of charge<\/p>",
+            "accordion_page_3": "",
+            "accordion_heading_4": "Size Guide",
+            "accordion_text_4": "<p>Size Chart<\/p>",
+            "accordion_page_4": "",
+            "accordion_heading_5": "",
+            "accordion_text_5": "",
+            "accordion_page_5": ""
+          }
+        },
+        "share-button": {
+          "type": "share-button",
+          "disabled": true,
+          "settings": {
+            "text": "Share"
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
         "title",
-        "form",
         "description",
-        "social-sharing"
+        "inventory_countdown",
+        "form",
+        "icon",
+        "product_accordions",
+        "share-button",
+        "upsell"
       ],
       "settings": {
-        "image_gallery": "zoom",
+        "wrapper": "full",
+        "image_size": "medium",
+        "enable_zoom": false,
         "enable_video_looping": false,
         "bg_color": ""
       }
     },
-    "faq": {
-      "type": "section-faq",
+    "overlapping-images-0": {
+      "type": "section-overlapping-images",
       "disabled": true,
-      "blocks": {
-        "faq-0": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-1": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
-          }
-        },
-        "faq-2": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "answer": "<p>Use this answer block to discuss some commonly asked questions you've discovered from your customers interactions. You could discuss product details, size fit, shipping policies, or anything you think would help merchants make an informed decision about your product or collection. This section will appear across all products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq-0",
-        "faq-1",
-        "faq-2"
-      ],
       "settings": {
-        "title": "FAQ",
-        "subheading": "Questions and answers",
-        "text": "",
+        "text_position": "right",
+        "text_alignment": "center",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1_position": "center-center",
+        "image_link_1": "",
+        "image_2_position": "center-center",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "heading": "Our Story, Our Promise",
+        "description": "<p>Use this text to describe a product, promotion, or your company.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary",
+        "video_btn_text": "",
+        "video_btn_url": "",
         "bg_color": ""
       }
     },
     "related": {
       "type": "related-products",
       "settings": {
-        "show_section": true,
+        "wrapper": "normal",
         "limit": 4,
-        "product_recommendations_heading": "You May Also Like",
+        "product_recommendations_heading": "You may also like",
         "bg_color": ""
       }
     }
   },
   "order": [
     "main",
-    "faq",
+    "overlapping-images-0",
     "related"
   ]
 }
